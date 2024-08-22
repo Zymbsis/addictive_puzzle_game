@@ -53,6 +53,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/additional_puzzle_game',
+    base: '/addictive_puzzle_game',
   };
 });
