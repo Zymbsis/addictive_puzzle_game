@@ -1,18 +1,56 @@
-@import './header.scss';
-@import './vite-promo.scss';
+@import url('./index.scss');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: $_primary_font;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  font-style: normal;
+  color: $_text_color;
+  background-color: $_primary_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.section {
+  width: 100%;
+  //need add vertical padding
+  @include media(desktop) {
+    //need add vertical padding
+  }
+}
+.docSection {
+  width: 100%;
+  //need add vertical padding
+  @include media(desktop) {
+    padding: 192px 0 82px 0;
+  }
+}
+.container {
+  width: $mobile;
+  //need add horizontal padding
+  margin: 0 auto;
+  @include media(desktop) {
+    width: $desktop;
+    padding: 0 72px;
+  }
+}
+.docContainer {
+  //need add horizontal padding
+  @include media(desktop) {
+    padding: 0 182px;
+  }
+}
+.sectionTitle {
+  font-family: $_secondary_font;
+  color: $_titles_color;
+  text-align: center;
+  //  @include font(60, 108);
+  @include media(desktop) {
+    @include font(60, 108);
+  }
 }
