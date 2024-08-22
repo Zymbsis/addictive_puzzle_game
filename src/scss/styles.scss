@@ -1,4 +1,16 @@
-@import url('./index.scss');
+@import url('modern-normalize');
+@import url('./header.scss');
+@import url('./burgerMenu.scss');
+@import url('./home.scss');
+@import url('./gallery.scss');
+@import url('./aboutTheGame.scss');
+@import url('./faq.scss');
+@import url('./howToPlay.scss');
+@import url('./reviews.scss');
+@import url('./benefits.scss');
+@import url('./privacyPolicy.scss');
+@import url('./termsOfUse.scss');
+@import url('./footer.scss');
 
 :root {
   font-family: $_primary_font;
