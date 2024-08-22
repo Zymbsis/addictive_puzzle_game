@@ -18,7 +18,7 @@
   font-weight: 400;
   font-style: normal;
   color: $_text_color;
-  background-color: $_primary_bg_color;
+  background-color: $_viewport_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,16 +28,19 @@
 }
 
 .section {
-  width: 100%;
+  width: $mobile;
+  background-color: $_primary_bg_color;
   //need add vertical padding
   @include media(desktop) {
+    width: $desktop;
     //need add vertical padding
   }
 }
 .docSection {
-  width: 100%;
+  width: $mobile;
   //need add vertical padding
   @include media(desktop) {
+    width: $desktop;
     padding: 192px 0 82px 0;
   }
 }
