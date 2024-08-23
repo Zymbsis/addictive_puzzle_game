@@ -6,31 +6,30 @@
     padding-bottom: 80px;
   }
 }
+
 .home-container {
   position: relative;
 }
+
 .main-title {
   color: $_titles_color;
   font-family: $_secondary_font;
-  @include font(36, 42);
   margin-bottom: 20px;
+  @include font(36, 42);
   @include media(desktop) {
     width: 746px;
-    @include font(98, 108);
     margin-bottom: 100px;
+    @include font(98, 108);
   }
 }
 .play-market-link {
   width: 184px;
   height: 52px;
-  background-color: $_white_color;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  border: 1px solid #e94c6f;
+  justify-content: center;
+  background-color: transparent;
   margin-bottom: 21px;
-  outline: 2px solid transparent;
   transition: all 300ms ease-in-out;
   @include media(desktop) {
     width: 306px;
@@ -38,26 +37,26 @@
     margin-bottom: 98px;
   }
 }
+
 .play-market-logo {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
 }
-.play-market-link:hover {
-  background-color: #ece9e9;
-  outline: 2px solid #e38096;
-  transition: all 300ms ease-in-out;
+
+.play-market-link:hover .play-market-logo {
+  fill: #ece9e9;
 }
-.play-market-link:active {
-  background-color: #e2d8d8;
-  outline: 4px solid #e38096;
-  transition: all 300ms ease-in-out;
+.play-market-link:active .play-market-logo {
+  fill: #e2d8d8;
 }
 
 .display-img-wrapper {
   position: relative;
-  margin: 0 auto;
-  margin-bottom: 33px;
   width: 223px;
   height: 248px;
-  // border: 1px solid red;
+  margin: 0 auto;
+  margin-bottom: 33px;
   @include media(desktop) {
     width: 456px;
     height: 540px;
@@ -68,12 +67,12 @@
 }
 
 .display-blue-dots {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
   width: 118px;
   height: 248px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
   transform: rotate(0deg);
   animation: rotateAnimationBlue 6600ms ease-in-out infinite;
   @include media(desktop) {
@@ -82,19 +81,20 @@
   }
 }
 .display-green-dots {
-  position: absolute;
-  bottom: 1px;
-  right: 3px;
-  transform: rotate(12deg);
   width: 110px;
   height: 228px;
+  position: absolute;
+  right: 3px;
+  bottom: 1px;
+  transform: rotate(12deg);
   animation: rotateAnimationGreen 6600ms ease-in-out infinite;
   @include media(desktop) {
-    transform: rotate(15deg);
     width: 227px;
     height: 485px;
+    transform: rotate(15deg);
   }
 }
+
 @keyframes rotateAnimationBlue {
   0% {
     transform: rotate(0deg);
@@ -147,23 +147,23 @@
   @include media(desktop) {
     @include font(14, 20);
     width: 636px;
-    // align-items: flex-end;
   }
   span {
-    @include font(12, 18);
     font-weight: 700;
+    @include font(12, 18);
     @include media(desktop) {
       @include font(14, 20);
     }
   }
 }
+
 .home-wave {
   position: absolute;
   width: 318px;
-  bottom: -67px;
   left: 0;
+  bottom: -58px;
   @include media(desktop) {
-    width: 1438px;
-    bottom: -186px;
+    width: 1436px;
+    bottom: -146px;
   }
 }
