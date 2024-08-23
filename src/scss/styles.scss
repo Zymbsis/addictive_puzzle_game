@@ -42,6 +42,7 @@
 }
 .docSection {
   width: $mobile;
+  background-color: $_primary_bg_color;
   //need add vertical padding
   @include media(desktop) {
     width: $desktop;
@@ -57,15 +58,19 @@
   }
 }
 .docContainer {
+  padding: 44px 24px;
   //need add horizontal padding
   @include media(desktop) {
-    padding: 0 182px;
+    padding: 80px 182px;
   }
 }
 .sectionTitle {
   font-family: $_secondary_font;
   color: $_titles_color;
   text-align: center;
+  height: 32px;
+  @include font(36, 20);
+  margin-bottom: 28px;
   //  @include font(60, 108);
   @include media(desktop) {
     @include font(60, 108);
