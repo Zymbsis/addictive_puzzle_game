@@ -1,0 +1,7 @@
+.section.gallery-section {
+  background-color: $_secondary_bg_color;
+  padding-top: 21px;
+  @include media(desktop) {
+    padding-top: 80px;
+  }
+}
