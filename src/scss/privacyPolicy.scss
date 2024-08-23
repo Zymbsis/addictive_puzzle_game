@@ -6,6 +6,12 @@
       font-weight: 700;
       line-height: 1.4;
       font-size: 14px;
+
+      @include media(desktop) {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-size: 24px;
+      }
     }
 
     p {
@@ -15,7 +21,18 @@
 
       &:not(:last-child) {
         margin-bottom: 12px;
+
+        @include media(desktop) {
+          margin-bottom: 16px;
+        }
       }
+
+      @include media(desktop) {
+        font-size: 24px;
+        line-height: 1.5;
+        width: 95%;
+      }
+
       span {
         font-weight: 600;
       }
@@ -28,6 +45,14 @@
     margin-bottom: 25px;
     p {
       width: 264px;
+    }
+
+    @include media(desktop) {
+      margin-bottom: 28px;
+
+      p {
+        width: 95%;
+      }
     }
   }
 }

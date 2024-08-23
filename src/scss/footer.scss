@@ -11,7 +11,7 @@
     text-align: center;
 
     @include media(desktop) {
-      padding-top: 40px;
+      padding: 40px 72px;
       flex-direction: row-reverse;
       gap: 0;
       justify-content: end;
@@ -29,6 +29,10 @@
     a {
       text-decoration-line: underline;
       font-size: 14px;
+
+      @include media(desktop) {
+        font-size: 16px;
+      }
     }
 
     p {
@@ -36,7 +40,6 @@
 
       @include media(desktop) {
         font-size: 16px;
-        // flex-grow: 1;
         margin-right: 214px;
         width: 350px;
       }

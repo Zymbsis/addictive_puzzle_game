@@ -43,10 +43,12 @@
 .docSection {
   width: $mobile;
   background-color: $_primary_bg_color;
+  margin: 0 auto;
+  padding: 85px 0 82px 0;
   //need add vertical padding
   @include media(desktop) {
     width: $desktop;
-    padding: 192px 0 82px 0;
+    padding: 117px 0 82px 0;
   }
 }
 .container {
@@ -69,10 +71,12 @@
   color: $_titles_color;
   text-align: center;
   height: 32px;
-  @include font(36, 20);
   margin-bottom: 28px;
+  @include font(36, 20);
   //  @include font(60, 108);
   @include media(desktop) {
     @include font(60, 108);
+    margin-bottom: 60px;
+    height: 40px;
   }
 }
