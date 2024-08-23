@@ -32,6 +32,7 @@
   width: $mobile;
   margin: 0 auto;
   background-color: $_primary_bg_color;
+  // border: 1px solid red;
   border-left: 2px solid $_footer_bg_color;
   border-right: 2px solid $_footer_bg_color;
   //need add vertical padding
@@ -50,7 +51,7 @@
 }
 .container {
   width: 100%;
-  //need add horizontal padding
+  padding: 0 16px;
   @include media(desktop) {
     width: $desktop;
     padding: 0 72px;
