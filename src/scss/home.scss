@@ -12,6 +12,8 @@
 }
 
 .main-title {
+  position: relative;
+  z-index: 1;
   color: $_titles_color;
   font-family: $_secondary_font;
   margin-bottom: 20px;
@@ -84,13 +86,14 @@
   width: 110px;
   height: 228px;
   position: absolute;
+
   right: 3px;
   bottom: 1px;
   transform: rotate(12deg);
   animation: rotateAnimationGreen 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 227px;
-    height: 485px;
+    height: 494px;
     transform: rotate(15deg);
   }
 }
@@ -160,10 +163,40 @@
 .home-wave {
   position: absolute;
   width: 318px;
-  left: 0;
+  left: -1px;
   bottom: -58px;
   @include media(desktop) {
     width: 1436px;
-    bottom: -146px;
+    bottom: -143px;
+  }
+}
+.gray-puzzle {
+  position: absolute;
+  fill: rgba(248, 248, 248, 0.5);
+  transform: rotate(-29deg);
+  width: 83px;
+  height: 76px;
+  top: 256px;
+  left: 36px;
+  @include media(desktop) {
+    width: 331px;
+    height: 303px;
+    top: -80px;
+    left: 61px;
+  }
+}
+.violet-puzzle {
+  position: absolute;
+  fill: rgba(230, 172, 251, 0.5);
+  transform: rotate(129deg);
+  width: 48px;
+  height: 42px;
+  bottom: 195px;
+  right: 43px;
+  @include media(desktop) {
+    width: 193px;
+    height: 177px;
+    top: 154px;
+    left: 390px;
   }
 }
