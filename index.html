@@ -19,18 +19,40 @@
     <title>Addictive Puzzle</title>
     
     <script type="module" crossorigin src="/addictive_puzzle_game/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/addictive_puzzle_game/assets/styles-e7ac27dc.css">
+    <link rel="stylesheet" href="/addictive_puzzle_game/assets/styles-cd704ef5.css">
   </head>
   <body>
     <header class="section header">
-  <div class="container">Header</div>
+  <div class="container header-container">
+    <a class="logo" href="./index.html">
+      <svg class="icon">
+        <use href="/addictive_puzzle_game/assets/sprite-fe280ab7.svg#icon-Logo"></use>
+      </svg>
+    </a>
+    <button class="menu">
+      <svg width="44" height="44">
+        <use href="/addictive_puzzle_game/assets/sprite-fe280ab7.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#aboutTheGame">About the Game</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#howToPlay">How to Play</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <!-- <div>Burger Menu</div>
  -->
 
     <main>
-      <section class="section home-section">
+      <section id="home" class="section home-section">
   <div class="container home-container">
     <div class="display-img-wrapper">
       <picture>
@@ -76,7 +98,7 @@
       target="_blank"
       href="https://play.google.com/store/apps/details?id=com.zerologicgames.findaway"
       ><svg class="play-market-logo">
-        <use href="/addictive_puzzle_game/assets/sprite-a57eca4a.svg#icon-play-market" />
+        <use href="/addictive_puzzle_game/assets/sprite-fe280ab7.svg#icon-play-market" />
       </svg>
     </a>
 
@@ -88,42 +110,52 @@
     </p>
     <img class="home-wave" src="data:image/png;base64,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" />
     <svg class="gray-puzzle">
-      <use href="/addictive_puzzle_game/assets/sprite-a57eca4a.svg#icon-puzzle" />
+      <use href="/addictive_puzzle_game/assets/sprite-fe280ab7.svg#icon-puzzle" />
     </svg>
     <svg class="violet-puzzle">
-      <use href="/addictive_puzzle_game/assets/sprite-a57eca4a.svg#icon-puzzle" />
+      <use href="/addictive_puzzle_game/assets/sprite-fe280ab7.svg#icon-puzzle" />
     </svg>
   </div>
 </section>
 
-      <section class="section gallery-section">
+      <section id="gallery" class="section gallery-section">
   <div class="container gallery-container">
     <h2 class="sectionTitle">Gallery</h2>
   </div>
 </section>
 
-      <section class="section">
+      <section id="aboutTheGame" class="section">
   <div class="container"><h2 class="sectionTitle">About the Game</h2></div>
 </section>
 
-      <section class="section">
+      <section id="faq" class="section">
   <div class="container"><h2 class="sectionTitle">FAQ</h2></div>
 </section>
 
-      <section class="section">
+      <section id="howToPlay" class="section">
   <div class="container"><h2 class="sectionTitle">How to Play</h2></div>
 </section>
 
-      <section class="section">
+      <section id="reviews" class="section">
   <div class="container"><h2 class="sectionTitle">Reviews</h2></div>
 </section>
 
-      <section class="section">
+      <section id="benefits" class="section">
   <div class="container"><h2 class="sectionTitle">Benefits</h2></div>
 </section>
 
     </main>
-    <footer class="section footer"><div class="container">Footer</div></footer>
+    <footer class="section footer">
+  <div class="container footer-container">
+    <ul class="footer-nav">
+      <li><a href="./privacy_policy.html">Privacy policy</a></li>
+      <li>
+        <a href="./term_of_use.html">Terms and conditions</a>
+      </li>
+    </ul>
+    <p class="footer-text">All rights reserved greatjoyhub.com | 2024</p>
+  </div>
+</footer>
 
 
     
