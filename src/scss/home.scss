@@ -1,3 +1,5 @@
+@import url('./homeAnimation.scss');
+
 .home-section {
   padding-top: 107px;
   padding-bottom: 44px;
@@ -25,32 +27,41 @@
   }
 }
 .play-market-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 184px;
   height: 52px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
   margin-bottom: 21px;
+  outline: none;
+  border: 2px solid #e94c6f;
+  border-radius: 12px;
+  background-color: $_white_color;
   transition: all 300ms ease-in-out;
+
   @include media(desktop) {
     width: 306px;
     height: 90px;
+    padding: 16.06px 20.81px 13.5px 22.6px;
     margin-bottom: 98px;
   }
 }
-
 .play-market-logo {
-  width: 100%;
-  height: 100%;
-  fill: #fff;
+  width: 159px;
+  height: 35px;
+  @include media(desktop) {
+    width: 264px;
+    height: 62px;
+  }
 }
 
-.play-market-link:hover .play-market-logo {
-  fill: #ece9e9;
+.play-market-link:hover {
+  background-color: #ece9e9;
+  outline: 2px solid #e38096;
 }
-.play-market-link:active .play-market-logo {
-  fill: #e2d8d8;
+.play-market-link:active {
+  outline: 4px solid #e38096;
+  background-color: #e2d8d8;
 }
 
 .display-img-wrapper {
@@ -76,7 +87,7 @@
   bottom: 0;
   z-index: 1;
   transform: rotate(0deg);
-  animation: rotateAnimationBlue 6600ms ease-in-out infinite;
+  animation: animationBlueDotsGame 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 248px;
     height: 540px;
@@ -86,58 +97,14 @@
   width: 110px;
   height: 228px;
   position: absolute;
-
   right: 3px;
   bottom: 1px;
   transform: rotate(12deg);
-  animation: rotateAnimationGreen 6600ms ease-in-out infinite;
+  animation: animationGreenDotsGame 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 227px;
     height: 494px;
     transform: rotate(15deg);
-  }
-}
-
-@keyframes rotateAnimationBlue {
-  0% {
-    transform: rotate(0deg);
-  }
-  12.12% {
-    transform: rotate(-2deg);
-  }
-  24.24% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rotateAnimationGreen {
-  0% {
-    transform: rotate(12deg);
-  }
-  12.12% {
-    transform: rotate(18deg);
-  }
-  24.24% {
-    transform: rotate(12deg);
-  }
-  100% {
-    transform: rotate(12deg);
-  }
-  @include media(desktop) {
-    0% {
-      transform: rotate(15deg);
-    }
-    12.12% {
-      transform: rotate(21deg);
-    }
-    24.24% {
-      transform: rotate(15deg);
-    }
-    100% {
-      transform: rotate(15deg);
-    }
   }
 }
 
@@ -178,6 +145,8 @@
   height: 76px;
   top: 256px;
   left: 36px;
+  scale: 1;
+  animation: animationGrayPuzzle 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 331px;
     height: 303px;
@@ -188,11 +157,13 @@
 .violet-puzzle {
   position: absolute;
   fill: rgba(230, 172, 251, 0.5);
-  transform: rotate(129deg);
+  transform: rotate(130deg);
   width: 48px;
   height: 42px;
   bottom: 195px;
   right: 43px;
+  scale: 1;
+  animation: animationVioletPuzzle 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 193px;
     height: 177px;
