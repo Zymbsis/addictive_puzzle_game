@@ -10,7 +10,7 @@ const swiper = new Swiper('.review-swiper', {
   speed: 400,
   breakpoints: {
     1440: {
-      initialSlide: 0,
+      initialSlide: 2,
       slidesPerView: 1,
       spaceBetween: 40,
     },
