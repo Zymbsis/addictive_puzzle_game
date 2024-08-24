@@ -19,19 +19,21 @@
     <title>Addictive Puzzle</title>
     
     <script type="module" crossorigin src="/addictive_puzzle_game/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/addictive_puzzle_game/assets/styles-c74da204.css">
+    <link rel="modulepreload" crossorigin href="/addictive_puzzle_game/assets/vendor-e0c5843a.js">
+    <link rel="stylesheet" href="/addictive_puzzle_game/assets/vendor-b51df72b.css">
+    <link rel="stylesheet" href="/addictive_puzzle_game/assets/styles-acae77bd.css">
   </head>
   <body>
     <header class="section header">
   <div class="container header-container">
     <a class="logo" href="./index.html">
       <svg class="icon">
-        <use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-Logo"></use>
+        <use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-Logo"></use>
       </svg>
     </a>
     <button class="menu">
       <svg width="44" height="44">
-        <use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-menu"></use>
+        <use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-menu"></use>
       </svg>
     </button>
     <nav class="header-nav">
@@ -98,7 +100,7 @@
       target="_blank"
       href="https://play.google.com/store/apps/details?id=com.zerologicgames.findaway"
       ><svg class="play-market-logo">
-        <use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-play-market" />
+        <use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-play-market" />
       </svg>
     </a>
 
@@ -110,10 +112,10 @@
     </p>
     <img class="home-wave" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAYCAYAAACLOiSEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMuSURBVHgB7Z1bTttAFIbPMaivZQd4BzUrIO9VJdhBlkZXUFeo6qu7grg7MDvwc8FzesYzThyUC7mPPf8nQWwngETiz2f+uZjN7FkIAAAi5JrAMBF62fg802f9fkMAgLVAgCHSyk1KIalJuEwSqomuSqJ/+kg13z3WH/5Vsx8p0ScVobkxRjI9kjKzPqocmb8QABHDaAJfFBWcvIhIkSRceslVuwjuEFSOKsbrrBUjU8ZEGaQIYgICPCda2QmZwlV1VwXffS0pMBZSNBOtFCcqxHsCYKRAgKfECy9hLogaFd5jRQNEZs8TFeKDFyIqRHA+XBxUaxxU+v1KtVW7WKiDqxU/mHZb2sJx20wpE9tc3H0x30KAx8U2af+IkDZpm3yowtuEzH6nDb1OEqEHXx2iowUciouCrORc5l1pwVCe4/yBAA/FCk8rvIRIK7xvBUVGWx2KTJmT+/5VF4C1iPxd5N6XbRlBgLtTi5ifvlmbn6vDYgjI7Jdmh29TNJXBEm2rSLSyS3KitzKkcwYC/AiRV3n7YJvKxrxqbkhTyDAybPYtJtcKr/AVXrBFAgS4GlR5R6SXG07RqzxSXPadDy37hgAdtcsl7BsY5vCUsQAZjoZRFAmxCtAJzzdrQ8slYgEyHBy1GPM9xCxvX2IRIIQXOJBhoMzzvCQfY/49VgH2xuNxiY6LYWFnozR09YCxhhfCSo/pKYZOv3EIcGmK2TgHIMcMxhqegflIh7enmM4fHuDI/l51144YD7qbHRwXN9awmTDPP69gP3odf81TrOcQvz/g5n1K5j9gdvzWpYR4sekxYDj05ilnEOJWup7bHIWDg7e9wF5x9Z+VOikurSN3uBj9RGfdqkSkspOaITpwCF6Ik95slLjzQwzi38hWAW7CLbZ5nfq9bpWFddR2FQftga3aPwzBgTNgL+ANNRl3F/CxV4mLebYFqrztHCRAAIbICikOtVL0OZ6dZwvh7QMECAC9Wx07xNsGdLdJ0KgohFVUxgIECMAWOjnamMcYStu4xy2umfqX6PNsj93SrsxvbmUzcKrdfWDISq7dRx5+WiBAAE6Ak+bqZjWEFg7/AUfFOynAH6DGAAAAAElFTkSuQmCC" />
     <svg class="gray-puzzle">
-      <use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-puzzle" />
+      <use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-puzzle" />
     </svg>
     <svg class="violet-puzzle">
-      <use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-puzzle" />
+      <use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-puzzle" />
     </svg>
   </div>
 </section>
@@ -239,106 +241,108 @@
   </div>
 </section>
 
-      <section class="section">
-  <div class="container">
+      <section class="section review-section">
+  <div class="container review-container">
     <!-- <img class="home-wave" src="/public/reviewTop.png" /> -->
     <h2 class="sectionTitle">Reviews</h2>
-    <div class="swiper review-swipper">
-      <!-- Additional required wrapper -->
-      <ul class="swiper-wrapper review-swipper-wrapper">
-        <!-- Slides -->
+    <div class="review-swiper-container">
+      <div class="swiper review-swiper">
+        <ul class="swiper-wrapper review-swiper-wrapper">
+          <li class="swiper-slide review-slide">
+            <p>"Perfect blend of challenge and relaxation!"</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>LogicalLaura</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"Every level is a new adventure. Highly addictive!"</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>PuzzleProPeter</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"Love the soothing music and clean graphics."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>CalmCarol</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"Great for keeping your brain sharp and entertained."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>SmartSally</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"It really makes you think outside the box."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>ChallengeChad</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"I appreciate the complexity as you progress."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>MazeMasterMike</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"Ideal for quick gaming sessions to kill time."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>BrainyBecky</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"The hint system is helpful without making it too easy."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>PonderingPaul</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"I`ve completed all levels and can`t wait for more."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>DedicatedDiane</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"Captivating puzzles that keep me coming back."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>EnthusiasticEmma</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"It's challenging, fun, and really makes you concentrate."</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>FocusedFred</span>
+            </div>
+          </li>
+          <li class="swiper-slide review-slide">
+            <p>"A must-try for anyone who loves brain teasers!"</p>
+            <div>
+              <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-review-puzzle" /></svg>
+              <span>PuzzleLoverPat</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-        <li class="swiper-slide review-slide">
-          <p>"Perfect blend of challenge and relaxation!"</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>LogicalLaura</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"Every level is a new adventure. Highly addictive!"</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>PuzzleProPeter</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"Love the soothing music and clean graphics."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>CalmCarol</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"Great for keeping your brain sharp and entertained."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>SmartSally</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"It really makes you think outside the box."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>SmartSally</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"I appreciate the complexity as you progress."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>MazeMasterMike</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"Ideal for quick gaming sessions to kill time."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>BrainyBecky</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"The hint system is helpful without making it too easy."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>PonderingPaul</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"I`ve completed all levels and can`t wait for more."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>DedicatedDiane</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"Captivating puzzles that keep me coming back."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>EnthusiasticEmma</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"It's challenging, fun, and really makes you concentrate."</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>FocusedFred</span>
-          </div>
-        </li>
-        <li class="swiper-slide review-slide">
-          <p>"A must-try for anyone who loves brain teasers!"</p>
-          <div>
-            <svg><use href="/addictive_puzzle_game/assets/sprite-ab3913df.svg#icon-review-puzzle" /></svg>
-            <span>PuzzleLoverPat</span>
-          </div>
-        </li>
-      </ul>
       <div class="nav-wrapper">
-        <div class="swiper-button-prev">X==</div>
-
-        <div class="swiper-pagination">. . .</div>
-
-        <div class="swiper-button-next">==X</div>
+        <button type="button" class="prev-review">
+          <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-arrow-left" /></svg>
+        </button>
+        <span>. . .</span>
+        <button type="button" class="next-review">
+          <svg><use href="/addictive_puzzle_game/assets/sprite-55abb76d.svg#icon-arrow-right" /></svg>
+        </button>
       </div>
     </div>
   </div>
