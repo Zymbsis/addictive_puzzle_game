@@ -1,0 +1,173 @@
+@import url('./homeAnimation.scss');
+
+.home-section {
+  padding-top: 107px;
+  padding-bottom: 44px;
+  @include media(desktop) {
+    padding-top: 252px;
+    padding-bottom: 80px;
+  }
+}
+
+.home-container {
+  position: relative;
+}
+
+.main-title {
+  position: relative;
+  z-index: 1;
+  color: $_titles_color;
+  font-family: $_secondary_font;
+  margin-bottom: 20px;
+  @include font(36, 42);
+  @include media(desktop) {
+    width: 746px;
+    margin-bottom: 100px;
+    @include font(98, 108);
+  }
+}
+.play-market-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 184px;
+  height: 52px;
+  margin-bottom: 21px;
+  outline: none;
+  border: 2px solid #e94c6f;
+  border-radius: 12px;
+  background-color: $_white_color;
+  transition: all 300ms ease-in-out;
+
+  @include media(desktop) {
+    width: 306px;
+    height: 90px;
+    padding: 16.06px 20.81px 13.5px 22.6px;
+    margin-bottom: 98px;
+  }
+}
+.play-market-logo {
+  width: 159px;
+  height: 35px;
+  @include media(desktop) {
+    width: 264px;
+    height: 62px;
+  }
+}
+
+.play-market-link:hover {
+  background-color: #ece9e9;
+  outline: 2px solid #e38096;
+}
+.play-market-link:active {
+  outline: 4px solid #e38096;
+  background-color: #e2d8d8;
+}
+
+.display-img-wrapper {
+  position: relative;
+  width: 223px;
+  height: 248px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  @include media(desktop) {
+    width: 456px;
+    height: 540px;
+    position: absolute;
+    right: 96px;
+    top: -71px;
+  }
+}
+
+.display-blue-dots {
+  width: 118px;
+  height: 248px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: rotate(0deg);
+  animation: animationBlueDotsGame 6600ms ease-in-out infinite;
+  @include media(desktop) {
+    width: 248px;
+    height: 540px;
+  }
+}
+.display-green-dots {
+  width: 110px;
+  height: 228px;
+  position: absolute;
+  right: 3px;
+  bottom: 1px;
+  transform: rotate(12deg);
+  animation: animationGreenDotsGame 6600ms ease-in-out infinite;
+  @include media(desktop) {
+    width: 227px;
+    height: 494px;
+    transform: rotate(15deg);
+  }
+}
+
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  gap: 8px;
+  @include font(10, 16);
+  @include media(desktop) {
+    @include font(14, 20);
+    width: 636px;
+  }
+  span {
+    font-weight: 700;
+    @include font(12, 18);
+    @include media(desktop) {
+      @include font(14, 20);
+    }
+  }
+}
+
+.home-wave {
+  position: absolute;
+  width: 318px;
+  left: -1px;
+  bottom: -58px;
+  @include media(desktop) {
+    width: 1436px;
+    bottom: -143px;
+  }
+}
+.gray-puzzle {
+  position: absolute;
+  fill: rgba(248, 248, 248, 0.5);
+  transform: rotate(-29deg);
+  width: 83px;
+  height: 76px;
+  top: 256px;
+  left: 36px;
+  scale: 1;
+  animation: animationGrayPuzzle 6600ms ease-in-out infinite;
+  @include media(desktop) {
+    width: 331px;
+    height: 303px;
+    top: -80px;
+    left: 61px;
+  }
+}
+.violet-puzzle {
+  position: absolute;
+  fill: rgba(230, 172, 251, 0.5);
+  transform: rotate(130deg);
+  width: 48px;
+  height: 42px;
+  bottom: 195px;
+  right: 43px;
+  scale: 1;
+  animation: animationVioletPuzzle 6600ms ease-in-out infinite;
+  @include media(desktop) {
+    width: 193px;
+    height: 177px;
+    top: 154px;
+    left: 390px;
+  }
+}

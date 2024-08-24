@@ -1,3 +1,77 @@
-<section id="home" class="section">
-  <div class="container"><h1>Find A Way: Addictive Puzzle</h1></div>
+<section id="home" class="section home-section">
+  <div class="container home-container">
+    <div class="display-img-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./img/homeSection/display_with_blue_dots_@1x_webp.webp 1x,
+            ./img/homeSection/display_with_blue_dots_@2x_webp.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./img/homeSection/display_with_blue_dots_@1x_png.png 1x,
+            ./img/homeSection/display_with_blue_dots_@2x_png.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          loading="lazy"
+          class="display-blue-dots"
+          src="./img/homeSection/display_with_blue_dots_@1x_png.png"
+          alt="Game with blue dots"
+          width="122"
+          height="258"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/homeSection/display_with_green_dots_@1x_webp.webp 1x,
+            ./img/homeSection/display_with_green_dots_@2x_webp.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./img/homeSection/display_with_green_dots_@1x_png.png 1x,
+            ./img/homeSection/display_with_green_dots_@2x_png.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          loading="lazy"
+          class="display-green-dots"
+          src="./img/homeSection/display_with_green_dots_@1x_png.png"
+          alt="Game with blue dots"
+          width="122"
+          height="258"
+        />
+      </picture>
+    </div>
+    <h1 class="main-title">Find A Way: Addictive Puzzle</h1>
+    <a
+      class="play-market-link"
+      target="_blank"
+      href="https://play.google.com/store/apps/details?id=com.zerologicgames.findaway"
+      ><svg class="play-market-logo">
+        <use href="./img/sprite.svg#icon-play-market" />
+      </svg>
+    </a>
+
+    <p class="disclaimer">
+      <span>Disclaimer!</span>GREATJOYHUB.COM IS A PLATFORM FOR HAVING FUN. THE
+      PROBABILITY OF WINNING PLAYING THIS GAME CANNOT BE CONSIDERED THE SAME AS
+      WINNING IN REAL LIFE GAMES. GAME IS AVAILABLE TO ADULT AUDIENCES OVER 18
+      YEARS OF AGE. ENJOY PLAYING THIS GAME!
+    </p>
+    <img class="home-wave" src="public/orange_wave.png" />
+    <svg class="gray-puzzle">
+      <use href="./img/sprite.svg#icon-puzzle" />
+    </svg>
+    <svg class="violet-puzzle">
+      <use href="./img/sprite.svg#icon-puzzle" />
+    </svg>
+  </div>
 </section>

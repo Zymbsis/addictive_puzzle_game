@@ -1,0 +1,158 @@
+@keyframes animationBlueDotsGame {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.12% {
+    transform: rotate(-2deg);
+  }
+  24.24% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animationGreenDotsGame {
+  0% {
+    transform: rotate(12deg);
+  }
+  12.12% {
+    transform: rotate(18deg);
+  }
+  24.24% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(12deg);
+  }
+}
+
+@include media(desktop) {
+  @keyframes animationGreenDotsGame {
+    0% {
+      transform: rotate(15deg);
+    }
+    12.12% {
+      transform: rotate(21deg);
+    }
+    24.24% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+}
+
+@keyframes animationGrayPuzzle {
+  0% {
+    transform: rotate(-29deg);
+    scale: 1;
+    left: 36px;
+    top: 256px;
+  }
+  12.12% {
+    transform: rotate(104deg);
+    scale: 0.38;
+    left: 225px;
+    top: 229px;
+  }
+  24.24% {
+    transform: rotate(-29deg);
+    scale: 1;
+    left: 36px;
+    top: 256px;
+  }
+  100% {
+    transform: rotate(-29deg);
+    scale: 1;
+    left: 36px;
+    top: 256px;
+  }
+}
+
+@include media(desktop) {
+  @keyframes animationGrayPuzzle {
+    0% {
+      transform: rotate(-29deg);
+      scale: 1;
+      left: 36px;
+      top: -80px;
+    }
+    12.12% {
+      transform: rotate(104deg);
+      scale: 0.38;
+      left: 225px;
+      top: -107px;
+    }
+    24.24% {
+      transform: rotate(-29deg);
+      scale: 1;
+      left: 36px;
+      top: -80px;
+    }
+    100% {
+      transform: rotate(-29deg);
+      scale: 1;
+      left: 36px;
+      top: -80px;
+    }
+  }
+}
+
+@keyframes animationVioletPuzzle {
+  0% {
+    transform: rotate(130deg);
+    scale: 1;
+    bottom: 195px;
+    right: 43px;
+  }
+  12.12% {
+    transform: rotate(175deg);
+    scale: 0.56;
+    bottom: 104px;
+    right: 27px;
+  }
+  24.24% {
+    transform: rotate(130deg);
+    scale: 1;
+    bottom: 195px;
+    right: 43px;
+  }
+  100% {
+    transform: rotate(130deg);
+    scale: 1;
+    bottom: 195px;
+    right: 43px;
+  }
+}
+
+@include media(desktop) {
+  @keyframes animationVioletPuzzle {
+    0% {
+      transform: rotate(130deg);
+      scale: 1;
+      left: 390px;
+      top: 154px;
+    }
+    12.12% {
+      transform: rotate(175deg);
+      scale: 0.56;
+      left: 406px;
+      top: 245px;
+    }
+    24.24% {
+      transform: rotate(130deg);
+      scale: 1;
+      left: 390px;
+      top: 154px;
+    }
+    100% {
+      transform: rotate(130deg);
+      scale: 1;
+      left: 390px;
+      top: 154px;
+    }
+  }
+}
