@@ -129,11 +129,11 @@
 
 .home-wave {
   position: absolute;
-  width: 318px;
-  left: -1px;
+  width: 317px;
+  left: 0;
   bottom: -58px;
   @include media(desktop) {
-    width: 1436px;
+    width: 1438px;
     bottom: -143px;
   }
 }
