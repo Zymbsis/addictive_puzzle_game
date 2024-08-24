@@ -1,57 +1,57 @@
-.footer {
-  .container {
-    padding: 20px 16px;
-    border-top: 2px solid $_navigation_color;
-    background-color: $_footer_bg_color;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: center;
+.section.footer {
+  padding: 20px 0;
+  border-top: 2px solid $_navigation_color;
+  background-color: $_footer_bg_color;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: end;
+    gap: 214px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 28px;
     align-items: center;
-    text-align: center;
-
+    justify-content: end;
+  }
+  a {
+    text-decoration-line: underline;
+    transition: color 300ms ease-in-out;
+    @include font(14, 20);
     @include media(desktop) {
-      padding: 40px 72px;
-      flex-direction: row-reverse;
-      gap: 0;
-      justify-content: end;
+      padding: 20px 0;
+      @include font(16, 22);
     }
+  }
+  a:hover {
+    color: $_hovered_link_color;
+  }
 
-    .list {
-      @include media(desktop) {
-        display: flex;
-        gap: 28px;
-        align-items: center;
-        justify-content: end;
-      }
-    }
+  a:active {
+    color: $_pressed_link_color;
+  }
+}
 
-    a {
-      text-decoration-line: underline;
-      font-size: 14px;
-      transition: color 0.2s linear;
+.footer-text {
+  @include font(10, 14);
 
-      @include media(desktop) {
-        font-size: 16px;
-      }
-    }
-
-    a:hover {
-      color: $_hovered_link_color;
-    }
-
-    a:focus {
-      color: $_pressed_link_color;
-    }
-
-    p {
-      font-size: 10px;
-
-      @include media(desktop) {
-        font-size: 16px;
-        margin-right: 214px;
-        width: 350px;
-      }
-    }
+  @include media(desktop) {
+    @include font(16, 22);
+    width: 350px;
   }
 }
