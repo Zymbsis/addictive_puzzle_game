@@ -15,7 +15,7 @@
 :root {
   font-family: $_primary_font;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: normal;
   font-weight: 400;
   font-style: normal;
   color: $_text_color;
@@ -43,10 +43,13 @@
 }
 .docSection {
   width: $mobile;
+  background-color: $_primary_bg_color;
+  margin: 0 auto;
+  padding: 85px 0 82px 0;
   //need add vertical padding
   @include media(desktop) {
     width: $desktop;
-    padding: 192px 0 82px 0;
+    padding: 117px 0 82px 0;
   }
 }
 .container {
@@ -58,17 +61,27 @@
   }
 }
 .docContainer {
+  padding: 44px 24px;
   //need add horizontal padding
   @include media(desktop) {
-    padding: 0 182px;
+    padding: 80px 182px;
   }
 }
 .sectionTitle {
   font-family: $_secondary_font;
   color: $_titles_color;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 32px;
+  margin-bottom: 28px;
+  @include font(36, 20);
   //  @include font(60, 108);
   @include media(desktop) {
     @include font(60, 108);
+    margin-bottom: 60px;
+    height: 40px;
   }
 }
