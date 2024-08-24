@@ -129,12 +129,12 @@
 
 .home-wave {
   position: absolute;
-  width: 317px;
+  width: 318px;
   left: 0;
-  bottom: -58px;
+  bottom: -66px;
   @include media(desktop) {
     width: 1438px;
-    bottom: -143px;
+    bottom: -185px;
   }
 }
 .gray-puzzle {
