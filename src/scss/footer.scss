@@ -29,10 +29,19 @@
     a {
       text-decoration-line: underline;
       font-size: 14px;
+      transition: color 0.2s linear;
 
       @include media(desktop) {
         font-size: 16px;
       }
+    }
+
+    a:hover {
+      color: $_hovered_link_color;
+    }
+
+    a:focus {
+      color: $_pressed_link_color;
     }
 
     p {
