@@ -25,32 +25,38 @@
   }
 }
 .play-market-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 184px;
   height: 52px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
+  padding: 9.65px 12.02px 8.11px 13.05px;
   margin-bottom: 21px;
+  outline: none;
+  border: 2px solid #e94c6f;
+  border-radius: 12px;
+  background-color: $_white_color;
   transition: all 300ms ease-in-out;
+
   @include media(desktop) {
     width: 306px;
     height: 90px;
+    padding: 16.06px 20.81px 13.5px 22.6px;
     margin-bottom: 98px;
   }
 }
-
 .play-market-logo {
   width: 100%;
   height: 100%;
-  fill: #fff;
 }
 
-.play-market-link:hover .play-market-logo {
-  fill: #ece9e9;
+.play-market-link:hover {
+  background-color: #ece9e9;
+  outline: 2px solid #e38096;
 }
-.play-market-link:active .play-market-logo {
-  fill: #e2d8d8;
+.play-market-link:active {
+  outline: 4px solid #e38096;
+  background-color: #e2d8d8;
 }
 
 .display-img-wrapper {
