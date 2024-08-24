@@ -1,3 +1,5 @@
+@import url('./homeAnimation.scss');
+
 .home-section {
   padding-top: 107px;
   padding-bottom: 44px;
@@ -30,7 +32,6 @@
   align-items: center;
   width: 184px;
   height: 52px;
-  padding: 9.65px 12.02px 8.11px 13.05px;
   margin-bottom: 21px;
   outline: none;
   border: 2px solid #e94c6f;
@@ -46,8 +47,12 @@
   }
 }
 .play-market-logo {
-  width: 100%;
-  height: 100%;
+  width: 159px;
+  height: 35px;
+  @include media(desktop) {
+    width: 264px;
+    height: 62px;
+  }
 }
 
 .play-market-link:hover {
@@ -82,7 +87,7 @@
   bottom: 0;
   z-index: 1;
   transform: rotate(0deg);
-  animation: rotateAnimationBlue 6600ms ease-in-out infinite;
+  animation: animationBlueDotsGame 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 248px;
     height: 540px;
@@ -92,58 +97,14 @@
   width: 110px;
   height: 228px;
   position: absolute;
-
   right: 3px;
   bottom: 1px;
   transform: rotate(12deg);
-  animation: rotateAnimationGreen 6600ms ease-in-out infinite;
+  animation: animationGreenDotsGame 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 227px;
     height: 494px;
     transform: rotate(15deg);
-  }
-}
-
-@keyframes rotateAnimationBlue {
-  0% {
-    transform: rotate(0deg);
-  }
-  12.12% {
-    transform: rotate(-2deg);
-  }
-  24.24% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rotateAnimationGreen {
-  0% {
-    transform: rotate(12deg);
-  }
-  12.12% {
-    transform: rotate(18deg);
-  }
-  24.24% {
-    transform: rotate(12deg);
-  }
-  100% {
-    transform: rotate(12deg);
-  }
-  @include media(desktop) {
-    0% {
-      transform: rotate(15deg);
-    }
-    12.12% {
-      transform: rotate(21deg);
-    }
-    24.24% {
-      transform: rotate(15deg);
-    }
-    100% {
-      transform: rotate(15deg);
-    }
   }
 }
 
@@ -184,6 +145,8 @@
   height: 76px;
   top: 256px;
   left: 36px;
+  scale: 1;
+  animation: animationGrayPuzzle 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 331px;
     height: 303px;
@@ -194,11 +157,13 @@
 .violet-puzzle {
   position: absolute;
   fill: rgba(230, 172, 251, 0.5);
-  transform: rotate(129deg);
+  transform: rotate(130deg);
   width: 48px;
   height: 42px;
   bottom: 195px;
   right: 43px;
+  scale: 1;
+  animation: animationVioletPuzzle 6600ms ease-in-out infinite;
   @include media(desktop) {
     width: 193px;
     height: 177px;
