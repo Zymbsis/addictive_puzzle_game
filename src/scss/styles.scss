@@ -48,10 +48,10 @@
 
 .container {
   width: 100%;
-  padding: 0 12px;
+  padding: 44px 12px;
   @include media(desktop) {
     width: $desktop;
-    padding: 0 68px;
+    padding: 80px 68px;
   }
 }
 .docContainer {
