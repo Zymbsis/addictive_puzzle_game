@@ -1,3 +1,12 @@
+.benefits {
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -5,29 +14,30 @@
 
   @include media(desktop) {
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 20px;
   }
 
   li {
-    padding: 12px 12px 20px;
+    padding: 12px;
     background-color: $_white_color;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 2px solid $_details_color;
     width: calc((100% - 16px) / 2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     height: 96px;
+    gap: 8px;
 
     @include media(desktop) {
-      padding: 24px;
+      padding: 28px;
       width: calc((100% - 3 * 24px) / 4);
       height: 192px;
       border-radius: 16px;
       font-size: 48px;
+      gap: 24px;
     }
   }
 }
@@ -43,18 +53,40 @@
   @include font(16, 20);
 
   @include media(desktop) {
-    @include font(36, 48);
+    @include font(32, 40);
+  }
+}
+.benefits-star {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  height: 44px;
+
+  @include media(desktop) {
+    gap: 16px;
+    height: 80px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    animation: animationRotateStar 5s linear infinite;
+
+    @include media(desktop) {
+      width: 68px;
+      height: 68px;
+    }
   }
 }
 
-.benefits-text-start {
-  position: relative;
-}
-
-.benefits-text-start::before {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url('./img/sprite.svg#icon-Star');
+@keyframes animationRotateStar {
+  0% {
+    transform: rotate(0deg);
+  }
+  16% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

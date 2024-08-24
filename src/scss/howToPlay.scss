@@ -1,0 +1,50 @@
+.howToPlay-list {
+  counter-reset: item;
+
+  li {
+    counter-increment: item;
+    margin-bottom: 12px;
+  }
+}
+.howToPlay-text {
+  @include font(14, 20);
+  color: $_secondary_bg_color;
+  padding: 8px 12px 8px 20px;
+  border-radius: 12px;
+}
+.howToPlay-text::before {
+  content: counter(item);
+  border-radius: 100%;
+  color: $_secondary_bg_color;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $_primary_bg_color;
+}
+.first {
+  background-color: $_red-color;
+}
+.second {
+  background-color: $_crimson_color;
+}
+.third {
+  background-color: $_pink_color;
+}
+.fourth {
+  background-color: $_violet_color;
+}
+.fifth {
+  background-color: $_faq_primary_color;
+}
+.sixth {
+  background-color: $_blue-color;
+}
+.seventh {
+  background-color: $_green_color;
+}
+.eighth {
+  background-color: $_emerald_color;
+}
