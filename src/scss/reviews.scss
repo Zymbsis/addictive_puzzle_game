@@ -1,0 +1,46 @@
+.nav-wrapper {
+  display: flex;
+  gap: 25px;
+}
+.review-slide {
+  width: 220px;
+  height: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $_white_color;
+  border-radius: 14px;
+  box-shadow: 26.667px 48.889px 33.778px 0px rgba(0, 0, 0, 0.05),
+    2.667px 5.333px 13.333px 0px rgba(0, 0, 0, 0.1);
+
+  p {
+    @include font(18, 22);
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+  span {
+    @include font(14, 20);
+    font-weight: 700;
+  }
+  @include media(desktop) {
+    width: 254px;
+    height: 264px;
+    padding: 24px;
+    p {
+      @include font(20, 22);
+    }
+  }
+}
+.review-slide:nth-child(1) svg,
+.review-slide:nth-child(1) span {
+  color: red;
+}
