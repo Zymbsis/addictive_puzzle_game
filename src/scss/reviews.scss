@@ -160,3 +160,32 @@
 .right-rotate {
   transform: rotate(10deg);
 }
+
+.review-swiper-pagination {
+  display: flex;
+  align-items: center;
+}
+
+svg.pagination-bullet {
+  width: 54px;
+  height: 14px;
+  --first-bullet: #ec639f;
+  --second-bullet: #cccccc;
+  --third-bullet: #cccccc;
+  @include media(desktop) {
+    width: 84px;
+    height: 20px;
+  }
+}
+
+svg.last-slide-active {
+  --first-bullet: #cccccc;
+  --second-bullet: #cccccc;
+  --third-bullet: #ec639f;
+}
+
+svg.slide-active {
+  --first-bullet: #cccccc;
+  --second-bullet: #ec639f;
+  --third-bullet: #cccccc;
+}
