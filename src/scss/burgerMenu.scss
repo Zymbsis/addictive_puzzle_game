@@ -1,6 +1,6 @@
 .burger-menu {
   width: 260px;
-  height: 339px;
+  // height: 339px;
   padding: 32px;
   border-bottom-left-radius: 32px;
   border-left: 2px solid $_navigation_color;
@@ -8,7 +8,7 @@
   border-bottom: 2px solid $_navigation_color;
   background-color: $_header_bg_color;
   position: absolute;
-  top: 76px;
+  top: 60px;
   right: 0;
   display: none;
   @include media(desktop) {
