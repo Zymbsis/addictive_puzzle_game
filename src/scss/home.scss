@@ -2,14 +2,9 @@
 
 section.home-section {
   padding-top: 107px;
-  padding-bottom: 44px;
   @include media(desktop) {
     padding-top: 252px;
-    padding-bottom: 80px;
   }
-}
-.home-container {
-  position: relative;
 }
 .main-title {
   position: relative;
