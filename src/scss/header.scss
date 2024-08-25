@@ -42,6 +42,18 @@
   }
   svg {
     pointer-events: none;
+    fill: $_navigation_color;
+    transition: all 300ms ease-in-out;
+  }
+}
+.open-menu:hover {
+  svg {
+    fill: $_hovered_link_color;
+  }
+}
+.open-menu:active {
+  svg {
+    fill: $_pressed_link_color;
   }
 }
 
@@ -63,6 +75,17 @@
   svg {
     width: 100%;
     height: 100%;
+    fill: $_navigation_color;
+  }
+}
+.close-menu:hover {
+  svg {
+    fill: $_hovered_link_color;
+  }
+}
+.close-menu:active {
+  svg {
+    fill: $_pressed_link_color;
   }
 }
 .close-menu.visible {
