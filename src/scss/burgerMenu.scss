@@ -1,0 +1,35 @@
+.burger-menu {
+  width: 260px;
+  height: 339px;
+  padding: 32px;
+  border-bottom-left-radius: 32px;
+  border-left: 2px solid $_navigation_color;
+  border-right: 2px solid $_footer_bg_color;
+  border-bottom: 2px solid $_navigation_color;
+  background-color: $_header_bg_color;
+  position: absolute;
+  top: 76px;
+  right: 0;
+  @include media(desktop) {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    padding: 20px 0 8px 8px;
+    display: inline-flex;
+    align-items: flex-end;
+    height: 41px;
+    width: 100%;
+    border-bottom: 1px solid $_faq_secondary_color;
+    cursor: pointer;
+  }
+
+  a {
+    color: $_navigation_color;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
