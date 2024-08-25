@@ -83,3 +83,14 @@
   transform: translateY(0);
   transition: all 300ms ease-in-out;
 }
+.faq-wave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -72px;
+
+  @include media(desktop) {
+    width: calc(100% - 2px);
+    top: -147px;
+  }
+}

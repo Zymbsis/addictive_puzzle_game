@@ -122,14 +122,16 @@ section.home-section {
 
 .home-wave {
   position: absolute;
-  width: 317px;
+  width: 100%;
   left: 0;
   bottom: -66px;
+
   @include media(desktop) {
-    width: 1438px;
-    bottom: -185px;
+    bottom: -146px;
+    left: -2px;
   }
 }
+
 .gray-puzzle {
   position: absolute;
   fill: rgba(248, 248, 248, 0.5);

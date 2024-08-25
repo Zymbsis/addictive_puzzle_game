@@ -30,3 +30,14 @@
     padding: 0;
   }
 }
+.about-the-game-wave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -71px;
+
+  @include media(desktop) {
+    width: calc(100% - 2px);
+    top: -156px;
+  }
+}

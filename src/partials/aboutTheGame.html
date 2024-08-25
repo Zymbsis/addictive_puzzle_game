@@ -1,6 +1,5 @@
 <section class="section" id="aboutTheGame">
   <div class="container">
-    <!-- <img class="about-wave" src="public/aboutTop.png" /> -->
     <h2 class="sectionTitle">About the Game</h2>
     <div class="inner-wrapper">
       <picture>
@@ -37,5 +36,25 @@
         experience for players of all ages.
       </p>
     </div>
+    <picture>
+      <source
+        srcset="./img/aboutTheGame/orange_wave_about_the_game_desktop.png"
+        type="image/png"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="./img/aboutTheGame/orange_wave_about_the_game_mobile.png"
+        type="image/png"
+        media="(min-width: 320px)"
+      />
+      <img
+        loading="lazy"
+        class="about-the-game-wave"
+        src="./img/aboutTheGame/orange_wave_about_the_game_desktop.png"
+        alt="decoration-wave"
+        width="1440"
+        height="60"
+      />
+    </picture>
   </div>
 </section>

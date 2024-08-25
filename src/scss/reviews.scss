@@ -189,3 +189,14 @@ svg.slide-active {
   --second-bullet: #ec639f;
   --third-bullet: #cccccc;
 }
+.reviews-wave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -65px;
+
+  @include media(desktop) {
+    width: calc(100% - 2px);
+    bottom: -146px;
+  }
+}
