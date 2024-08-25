@@ -11,6 +11,10 @@ screen types:
     @media screen and (min-width: $mobile) {
       @content;
     }
+  } @else if $_screen == toDesktop {
+    @media screen and (max-width: $toDesktop) {
+      @content;
+    }
   } @else if $_screen == desktop {
     @media screen and (min-width: $desktop) {
       @content;

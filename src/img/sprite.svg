@@ -35,7 +35,10 @@
 </symbol>
 
 <!-- TODO -->
-
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="#d62845" style="fill: var(--color1, #d62845)" d="M8.801 6.743l16.456 16.456c0.568 0.568 0.568 1.489 0 2.057s-1.489 0.568-2.057 0l-16.456-16.456c-0.568-0.568-0.568-1.489 0-2.057s1.489-0.568 2.057 0z"></path>
+<path fill="#d62845" style="fill: var(--color1, #d62845)" d="M6.119 23.303l16.456-16.456c0.568-0.568 1.489-0.568 2.057 0s0.568 1.489 0 2.057l-16.456 16.456c-0.568 0.568-1.489 0.568-2.057 0s-0.568-1.489 0-2.057z"></path>
+</symbol>
 
 <symbol id="icon-review-puzzle" viewBox="0 0 32 32">
 <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1429" d="M16 0.571c8.521 0 15.429 6.908 15.429 15.429s-6.908 15.429-15.429 15.429c-8.521 0-15.429-6.908-15.429-15.429s6.908-15.429 15.429-15.429z"></path>
