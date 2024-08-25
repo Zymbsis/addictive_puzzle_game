@@ -1,9 +1,5 @@
 .section.review-section {
   background-color: $_secondary_bg_color;
-  padding: 44px 0;
-  @include media(desktop) {
-    padding: 80px 0;
-  }
 }
 .container.review-container {
   padding: 0;

@@ -1,6 +1,6 @@
 @import url('./homeAnimation.scss');
 
-.home-section {
+section.home-section {
   padding-top: 107px;
   padding-bottom: 44px;
   @include media(desktop) {
@@ -8,11 +8,9 @@
     padding-bottom: 80px;
   }
 }
-
 .home-container {
   position: relative;
 }
-
 .main-title {
   position: relative;
   z-index: 1;
