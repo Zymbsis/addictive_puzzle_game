@@ -42,8 +42,9 @@ const swiper = new Swiper('.review-swiper', {
 });
 
 function changeBullet(swiper) {
-  const paginationBulletClass =
-    document.querySelector('.pagination-bullet').classList;
+  const paginationBulletClass = document.querySelector(
+    '.review-pagination-bullet'
+  ).classList;
   if (swiper.activeIndex === 0) {
     paginationBulletClass.remove('last-slide-active', 'slide-active');
   } else if (swiper.activeIndex === swiper.slides.length - 1) {

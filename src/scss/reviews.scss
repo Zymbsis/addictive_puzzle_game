@@ -109,7 +109,7 @@
   fill: $_emerald_color;
 }
 
-.nav-wrapper {
+.review-nav-wrapper {
   display: flex;
   justify-content: center;
   gap: 25px;
@@ -166,7 +166,7 @@
   align-items: center;
 }
 
-svg.pagination-bullet {
+svg.review-pagination-bullet {
   width: 54px;
   height: 14px;
   --first-bullet: #ec639f;

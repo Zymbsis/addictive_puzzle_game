@@ -1,3 +1,77 @@
 .section.gallery-section {
   background-color: $_secondary_bg_color;
 }
+.gallery-swiper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+  @include media(desktop) {
+    gap: 32px;
+  }
+}
+.swiper-wrapper.gallery-swiper-wrapper {
+  display: flex;
+  gap: 16px;
+  @include media(desktop) {
+    gap: 56px;
+  }
+}
+.swiper-slide.gallery-slide {
+  width: 196px;
+  height: 357px;
+}
+.gallery-section-img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid $_details_color;
+}
+.gallery-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  button {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $_details_color;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.gallery-swiper-pagination {
+  display: flex;
+  align-items: center;
+}
+
+svg.gallery-pagination-bullet {
+  width: 54px;
+  height: 14px;
+  --first-bullet: #ec639f;
+  --second-bullet: #cccccc;
+  --third-bullet: #cccccc;
+  @include media(desktop) {
+    width: 84px;
+    height: 20px;
+  }
+}
+
+svg.last-slide-active {
+  --first-bullet: #cccccc;
+  --second-bullet: #cccccc;
+  --third-bullet: #ec639f;
+}
+
+svg.slide-active {
+  --first-bullet: #cccccc;
+  --second-bullet: #ec639f;
+  --third-bullet: #cccccc;
+}
