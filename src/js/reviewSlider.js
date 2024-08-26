@@ -17,16 +17,7 @@ const swiper = new Swiper('.review-swiper', {
   },
   on: {
     slideChange: swiper => {
-      swiper.slides[swiper.realIndex + 1]?.nextElementSibling?.classList.add(
-        'right-rotate'
-      );
-      swiper.slides[
-        swiper.realIndex - 1
-      ]?.previousElementSibling?.classList.add('left-rotate');
-      swiper.slides[swiper.realIndex].classList.remove(
-        'right-rotate',
-        'left-rotate'
-      );
+      changeRotate(swiper);
       changeBullet(swiper);
     },
     init: swiper => {
@@ -40,7 +31,18 @@ const swiper = new Swiper('.review-swiper', {
     nextEl: '.next-review',
   },
 });
-
+function changeRotate(swiper) {
+  swiper.slides[swiper.realIndex + 1]?.nextElementSibling?.classList.add(
+    'right-rotate'
+  );
+  swiper.slides[swiper.realIndex - 1]?.previousElementSibling?.classList.add(
+    'left-rotate'
+  );
+  swiper.slides[swiper.realIndex].classList.remove(
+    'right-rotate',
+    'left-rotate'
+  );
+}
 function changeBullet(swiper) {
   const paginationBulletClass = document.querySelector(
     '.review-pagination-bullet'
