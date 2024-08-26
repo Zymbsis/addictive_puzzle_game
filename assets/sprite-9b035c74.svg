@@ -18,7 +18,7 @@
 
 
 <!-- TODO -->
-<symbol id="icon-pagination" viewBox="0 0 123 35">
+<symbol id="icon-pagination" viewBox="0 0 123 32">
 <path fill="none" stroke="#ccc" style="stroke: var(--line, #ccc)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="11.4286" d="M16 16h91.429"></path>
 <path style="fill: var(--first-bullet)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
 <path style="fill: var(--third-bullet)" d="M107.429 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
