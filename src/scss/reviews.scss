@@ -16,6 +16,9 @@
 .container.review-container {
   padding: 20px 0;
   overflow: hidden;
+  @include media(desktop) {
+    width: 1438px;
+  }
 }
 
 .swiper.review-swiper {
