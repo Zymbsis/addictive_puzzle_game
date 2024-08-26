@@ -16,13 +16,11 @@ function showAnswerHandler(e) {
         'faq-answer',
         'show-answer'
       );
+      button.parentElement.classList.remove('faq-answer');
     }
   });
 
+  currentButton.parentElement.classList.toggle('faq-answer', !isAnswerShown);
   currentButton.classList.toggle('rotate', !isAnswerShown);
   currentAnswer.classList.toggle('show-answer', !isAnswerShown);
-  const timer = setTimeout(() => {
-    currentAnswer.classList.toggle('faq-answer', !isAnswerShown);
-    clearTimeout(timer);
-  }, 0);
 }
