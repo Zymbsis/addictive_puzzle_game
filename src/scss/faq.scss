@@ -17,8 +17,10 @@
   position: relative;
   padding-left: 20px;
   transition: all 300ms ease-in-out;
+  max-height: 28px;
   @include media(desktop) {
     padding-left: 40px;
+    max-height: 56px;
   }
 }
 .button-triangle {
@@ -65,21 +67,27 @@
   z-index: 1;
 }
 .answer {
+  position: absolute;
   background-color: $_primary_bg_color;
   color: $_faq_primary_color;
-  position: relative;
-  display: none;
   transform: translateY(-28px);
+  opacity: 0;
   transition: all 300ms ease-in-out;
   @include media(desktop) {
+    opacity: 1;
     transform: translateY(-100%);
   }
 }
 
-.answer.show-answer {
-  display: block;
+.faq-item.faq-answer {
+  max-height: 76px;
+  transition: all 300ms ease-in-out;
+  @include media(desktop) {
+    max-height: 118px;
+  }
 }
-.answer.faq-answer {
+.answer.show-answer {
+  opacity: 1;
   transform: translateY(0);
   transition: all 300ms ease-in-out;
 }

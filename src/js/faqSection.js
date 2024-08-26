@@ -6,7 +6,8 @@ faqAnswerButtons.forEach(button =>
 
 function showAnswerHandler(e) {
   const currentButton = e.target;
-  const currentAnswer = e.target.parentElement.lastElementChild;
+  const currentAnswer = currentButton.parentElement.lastElementChild;
+  const currentQuestionContainer = currentButton.parentElement;
   const isAnswerShown = currentButton.classList.contains('rotate');
 
   faqAnswerButtons.forEach(button => {
@@ -16,13 +17,11 @@ function showAnswerHandler(e) {
         'faq-answer',
         'show-answer'
       );
+      button.parentElement.classList.remove('faq-answer');
     }
   });
 
+  currentQuestionContainer.classList.toggle('faq-answer', !isAnswerShown);
   currentButton.classList.toggle('rotate', !isAnswerShown);
   currentAnswer.classList.toggle('show-answer', !isAnswerShown);
-  const timer = setTimeout(() => {
-    currentAnswer.classList.toggle('faq-answer', !isAnswerShown);
-    clearTimeout(timer);
-  }, 0);
 }
