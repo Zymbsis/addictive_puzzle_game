@@ -15,12 +15,13 @@ export function onNavigationLinkClick(e) {
     location.href.includes('term_of_use')
   ) {
     localStorage.setItem('elementId', elementId);
-    location.href = '/';
+    location.href = 'addictive_puzzle_game/';
     return;
   }
   e.preventDefault();
   scrollToElement(elementId);
 }
+
 function scrollToElement(elemId) {
   const element = document.querySelector(elemId);
   const currentElementPosition = element.getBoundingClientRect().top;
@@ -35,6 +36,7 @@ function scrollToElement(elemId) {
     localStorage.setItem('elementId', '');
   }
 }
+
 function redirectToSelectedSection() {
   if (!localStorage.getItem('elementId')) return;
   const elementId = localStorage.getItem('elementId');
