@@ -1,9 +1,14 @@
 .section.review-section {
   background-color: $_secondary_bg_color;
-  background-image: url(../img/decorativeWave/orange_wave_reviews_top_mobile.png);
-  background-repeat: no-repeat;
+  background-image: image-set(
+    url(../img/decorativeWave/orange_wave_reviews_top_mobile.webp),
+    url(../img/decorativeWave/orange_wave_reviews_top_mobile.png)
+  );
   @include media(desktop) {
-    background-image: url(../img/decorativeWave/orange_wave_reviews_top_desktop.png);
+    background-image: image-set(
+      url(../img/decorativeWave/orange_wave_reviews_top_desktop.webp),
+      url(../img/decorativeWave/orange_wave_reviews_top_desktop.png)
+    );
   }
 }
 .container.review-container {

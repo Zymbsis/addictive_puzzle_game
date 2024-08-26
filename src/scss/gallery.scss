@@ -1,12 +1,24 @@
 .section.gallery-section {
   background-color: $_secondary_bg_color;
-  background-image: url(../img/decorativeWave/orange_wave_gallery_top_mobile.png),
-    url(../img/decorativeWave/orange_wave_gallery_bottom_mobile.png);
-  background-repeat: no-repeat;
+  background-image: image-set(
+      url(../img/decorativeWave/orange_wave_gallery_top_mobile.webp),
+      url(../img/decorativeWave/orange_wave_gallery_top_mobile.png)
+    ),
+    image-set(
+      url(../img/decorativeWave/orange_wave_gallery_bottom_mobile.webp),
+      url(../img/decorativeWave/orange_wave_gallery_bottom_mobile.png)
+    );
+
   background-position: center top, center bottom -1px;
   @include media(desktop) {
-    background-image: url(../img/decorativeWave/orange_wave_gallery_top_desktop.png),
-      url(../img/decorativeWave/orange_wave_gallery_bottom_desktop.png);
+    background-image: image-set(
+        url(../img/decorativeWave/orange_wave_gallery_top_desktop.webp),
+        url(../img/decorativeWave/orange_wave_gallery_top_desktop.png)
+      ),
+      image-set(
+        url(../img/decorativeWave/orange_wave_gallery_bottom_desktop.webp),
+        url(../img/decorativeWave/orange_wave_gallery_bottom_desktop.png)
+      );
   }
 }
 .gallery-swiper-container {
