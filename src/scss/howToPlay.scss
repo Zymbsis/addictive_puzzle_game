@@ -9,6 +9,12 @@
       url(../img/decorativeWave/gray_wave_how_to_play_top_desktop.png)
     );
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .howToPlay-list {
   counter-reset: item;
@@ -16,25 +22,45 @@
   li {
     counter-increment: item;
     margin-bottom: 12px;
+    position: relative;
+    width: 270px;
+  }
+
+  li::before {
+    content: '';
+    border-radius: 100%;
+    color: $_secondary_bg_color;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-color: $_primary_bg_color;
+
+    position: absolute;
+    top: 0;
+    left: -20px;
   }
 }
 .howToPlay-text {
   @include font(14, 20);
   color: $_secondary_bg_color;
-  padding: 8px 12px 8px 20px;
+  padding: 4px 12px 4px 20px;
   border-radius: 12px;
 }
 .howToPlay-text::before {
   content: counter(item);
-  border-radius: 100%;
-  color: $_secondary_bg_color;
-  width: 28px;
-  height: 28px;
-  text-align: center;
-  display: inline-block;
   font-size: 18px;
   font-weight: 700;
-  background-color: $_primary_bg_color;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: $_red-color;
+  top: 4px;
+  left: -15px;
 }
 .first {
   background-color: $_red-color;
