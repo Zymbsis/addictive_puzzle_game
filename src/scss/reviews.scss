@@ -1,10 +1,12 @@
 .section.review-section {
+  padding: 24px 0;
   background-color: $_secondary_bg_color;
   background-image: image-set(
     url(../img/decorativeWave/orange_wave_reviews_top_mobile.webp),
     url(../img/decorativeWave/orange_wave_reviews_top_mobile.png)
   );
   @include media(desktop) {
+    padding: 60px 0;
     background-image: image-set(
       url(../img/decorativeWave/orange_wave_reviews_top_desktop.webp),
       url(../img/decorativeWave/orange_wave_reviews_top_desktop.png)
@@ -12,17 +14,8 @@
   }
 }
 .container.review-container {
-  padding: 0;
-}
-
-.review-swiper-container {
+  padding: 20px 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  @include media(desktop) {
-    margin-bottom: 24px;
-  }
 }
 
 .swiper.review-swiper {
@@ -30,10 +23,12 @@
   height: 256px;
   padding: 18px 0;
   overflow: visible;
+  margin-bottom: 12px;
   @include media(desktop) {
     width: 254px;
     height: 304px;
     padding: 20px 0;
+    margin-bottom: 24px;
   }
 }
 
