@@ -18,12 +18,28 @@
 }
 .howToPlay-list {
   counter-reset: item;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 64px;
+    width: 1076px;
+  }
 
   li {
     counter-increment: item;
-    margin-bottom: 12px;
     position: relative;
     width: 270px;
+
+    @include media(desktop) {
+      width: 486px;
+    }
   }
 
   li::before {
@@ -33,11 +49,16 @@
     width: 28px;
     height: 28px;
     display: inline-block;
-    background-color: $_primary_bg_color;
-
+    background-color: $_faq_secondary_color;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -7%;
+
+    @include media(desktop) {
+      width: 56px;
+      height: 56px;
+      left: -36px;
+    }
   }
 }
 .howToPlay-text {
@@ -45,10 +66,16 @@
   color: $_secondary_bg_color;
   padding: 4px 12px 4px 20px;
   border-radius: 12px;
+
+  @include media(desktop) {
+    padding: 10px 32px;
+    border-radius: 32px;
+    @include font(24, 36);
+  }
 }
 .howToPlay-text::before {
   content: counter(item);
-  font-size: 18px;
+
   font-weight: 700;
   border-radius: 100%;
   width: 20px;
@@ -58,31 +85,23 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: $_red-color;
   top: 4px;
   left: -15px;
+
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    top: 8px;
+    left: -30px;
+  }
 }
-.first {
-  background-color: $_red-color;
+
+.howToPlay-text {
+  --bg-color: $_primary_bg_color;
+  background-color: var(--bg-color);
 }
-.second {
-  background-color: $_crimson_color;
-}
-.third {
-  background-color: $_pink_color;
-}
-.fourth {
-  background-color: $_violet_color;
-}
-.fifth {
-  background-color: $_faq_primary_color;
-}
-.sixth {
-  background-color: $_blue-color;
-}
-.seventh {
-  background-color: $_green_color;
-}
-.eighth {
-  background-color: $_emerald_color;
+
+.howToPlay-text::before {
+  background-color: var(--bg-color);
 }
