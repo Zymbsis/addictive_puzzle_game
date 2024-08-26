@@ -17,7 +17,8 @@
   gap: 24px;
   @include media(desktop) {
     flex-direction: row;
-    gap: 115px;
+    gap: 0;
+    justify-content: space-between;
     padding: 0 110px 0 149px;
   }
 }

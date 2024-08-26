@@ -1,10 +1,12 @@
 .section.review-section {
+  padding: 24px 0;
   background-color: $_secondary_bg_color;
   background-image: image-set(
     url(../img/decorativeWave/orange_wave_reviews_top_mobile.webp),
     url(../img/decorativeWave/orange_wave_reviews_top_mobile.png)
   );
   @include media(desktop) {
+    padding: 60px 0;
     background-image: image-set(
       url(../img/decorativeWave/orange_wave_reviews_top_desktop.webp),
       url(../img/decorativeWave/orange_wave_reviews_top_desktop.png)
@@ -12,16 +14,10 @@
   }
 }
 .container.review-container {
-  padding: 0;
-}
-
-.review-swiper-container {
+  padding: 20px 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
   @include media(desktop) {
-    margin-bottom: 24px;
+    width: 1438px;
   }
 }
 
@@ -30,10 +26,12 @@
   height: 256px;
   padding: 18px 0;
   overflow: visible;
+  margin-bottom: 12px;
   @include media(desktop) {
     width: 254px;
     height: 304px;
     padding: 20px 0;
+    margin-bottom: 24px;
   }
 }
 
@@ -47,29 +45,40 @@
   box-shadow: 26.667px 48.889px 33.778px 0px rgba(0, 0, 0, 0.05),
     2.667px 5.333px 13.333px 0px rgba(0, 0, 0, 0.1);
   transition: all 400ms ease-in-out;
+  @include media(desktop) {
+    padding: 24px;
+  }
 
   @include media(desktop) {
     padding: 24px;
-    p {
-      @include font(20, 22);
-    }
   }
-  p {
-    @include font(18, 22);
+}
+
+.swiper-slide.review-slide div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.swiper-slide.review-slide p {
+  @include font(18, 22);
+  @include media(desktop) {
+    @include font(20, 22);
   }
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+}
+.swiper-slide.review-slide svg {
+  width: 48px;
+  height: 48px;
+  @include media(desktop) {
+    width: 56px;
+    height: 56px;
   }
-  svg {
-    width: 48px;
-    height: 48px;
-  }
-  span {
-    color: $_crimson_color;
-    @include font(14, 20);
-    font-weight: 700;
+}
+.swiper-slide.review-slide span {
+  color: $_crimson_color;
+  @include font(14, 20);
+  font-weight: 700;
+  @include media(desktop) {
+    @include font(16, 22);
   }
 }
 .swiper-slide.review-slide.swiper-slide-prev {
@@ -130,6 +139,10 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    @include media(desktop) {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   svg {
@@ -163,7 +176,11 @@
     fill: #f1b0cc;
   }
 }
-
+.prev-review {
+  svg {
+    transform: rotate(-180deg);
+  }
+}
 .left-rotate {
   transform: rotate(-10deg);
 }

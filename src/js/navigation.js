@@ -25,7 +25,7 @@ export function onNavigationLinkClick(e) {
 function scrollToElement(elemId) {
   const element = document.querySelector(elemId);
   const currentElementPosition = element.getBoundingClientRect().top;
-  const headerHeight = header.offsetHeight / 2;
+  const headerHeight = header.offsetHeight;
   const positionToScroll =
     currentElementPosition + window.scrollY - headerHeight;
   window.scrollTo({
