@@ -1,4 +1,6 @@
 .termsOfUse {
+  position: relative;
+  overflow: hidden;
   section {
     margin-bottom: 24px;
     h3 {
@@ -18,6 +20,8 @@
       font-size: 14px;
       line-height: 1.42;
       width: 272px;
+      position: relative;
+      z-index: 1;
 
       &:not(:last-child) {
         margin-bottom: 12px;
@@ -40,5 +44,75 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.termsOfUse .white-puzzle {
+  position: absolute;
+  width: 132px;
+  height: 120px;
+  transform: rotate(-25deg);
+  fill: #f8f8f8;
+  opacity: 0.5;
+  top: 572px;
+  left: -25px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(29deg);
+    top: 1140px;
+    left: 6px;
+  }
+}
+.termsOfUse .pink-puzzle {
+  position: absolute;
+  width: 119px;
+  height: 116px;
+  fill: rgba(254, 169, 220, 0.5);
+  top: 1594px;
+  left: -30px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+.termsOfUse .light-blue-puzzle {
+  position: absolute;
+  width: 132px;
+  height: 120px;
+  transform: rotate(31deg);
+  flex-shrink: 0;
+  fill: rgba(174, 202, 245, 0.5);
+  opacity: 0.5;
+  bottom: 230px;
+  left: 204px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(-129deg);
+    left: 964px;
+    bottom: 196px;
+    fill: #ebb0d3;
+  }
+}
+
+.termsOfUse .lilac-puzzle {
+  position: absolute;
+  width: 120px;
+  height: 116px;
+  transform: rotate(338deg);
+  fill: rgba(254, 169, 220, 0.5);
+  left: 213px;
+  top: 121px;
+
+  @include media(desktop) {
+    width: 293px;
+    height: 282px;
+    transform: rotate(0deg);
+    left: 1095px;
+    top: 63px;
+    fill: #fea9dc;
   }
 }

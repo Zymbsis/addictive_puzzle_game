@@ -15,7 +15,7 @@ export function onNavigationLinkClick(e) {
     location.href.includes('term_of_use')
   ) {
     localStorage.setItem('elementId', elementId);
-    location.href = 'addictive_puzzle_game/';
+    location.href = './index.html';
     return;
   }
   e.preventDefault();

@@ -1,10 +1,15 @@
 .privacyPolicy {
+  position: relative;
+  overflow: hidden;
+
   section {
     h3 {
       margin-bottom: 16px;
       font-weight: 700;
       line-height: 1.4;
       font-size: 14px;
+      position: relative;
+      z-index: 1;
 
       @include media(desktop) {
         margin-bottom: 20px;
@@ -14,9 +19,11 @@
     }
 
     p {
+      position: relative;
       font-size: 14px;
       line-height: 1.42;
       width: 272px;
+      z-index: 1;
 
       &:not(:last-child) {
         margin-bottom: 12px;
@@ -53,5 +60,43 @@
         width: 95%;
       }
     }
+  }
+}
+
+.privacyPolicy .white-puzzle {
+  position: absolute;
+  width: 132px;
+  height: 120px;
+  transform: rotate(-25deg);
+  fill: #f8f8f8;
+  opacity: 0.5;
+  bottom: 940px;
+  left: -25px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(23deg);
+    bottom: 963px;
+    left: -10px;
+  }
+}
+
+.privacyPolicy .lilac-puzzle {
+  position: absolute;
+  width: 90px;
+  height: 84px;
+  transform: rotate(-115deg);
+  fill: #ebb0d3;
+  opacity: 0.5;
+  bottom: 144px;
+  left: 230px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(-130deg);
+    left: 1040px;
+    bottom: 66px;
   }
 }
