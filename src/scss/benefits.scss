@@ -1,1 +1,7 @@
-
+.section.benefits-section {
+  background-image: url(../img/decorativeWave/gray_wave_benefits_top_mobile.png);
+  background-repeat: no-repeat;
+  @include media(desktop) {
+    background-image: url(../img/decorativeWave/gray_wave_benefits_top_desktop.png);
+  }
+}

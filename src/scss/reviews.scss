@@ -1,5 +1,10 @@
 .section.review-section {
   background-color: $_secondary_bg_color;
+  background-image: url(../img/decorativeWave/orange_wave_reviews_top_mobile.png);
+  background-repeat: no-repeat;
+  @include media(desktop) {
+    background-image: url(../img/decorativeWave/orange_wave_reviews_top_desktop.png);
+  }
 }
 .container.review-container {
   padding: 0;
@@ -188,15 +193,4 @@ svg.slide-active {
   --first-bullet: #cccccc;
   --second-bullet: #ec639f;
   --third-bullet: #cccccc;
-}
-.reviews-wave {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -65px;
-
-  @include media(desktop) {
-    width: calc(100% - 2px);
-    bottom: -146px;
-  }
 }

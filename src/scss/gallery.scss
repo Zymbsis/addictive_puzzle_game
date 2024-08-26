@@ -1,5 +1,13 @@
 .section.gallery-section {
   background-color: $_secondary_bg_color;
+  background-image: url(../img/decorativeWave/orange_wave_gallery_top_mobile.png),
+    url(../img/decorativeWave/orange_wave_gallery_bottom_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center top, center bottom -1px;
+  @include media(desktop) {
+    background-image: url(../img/decorativeWave/orange_wave_gallery_top_desktop.png),
+      url(../img/decorativeWave/orange_wave_gallery_bottom_desktop.png);
+  }
 }
 .gallery-swiper-container {
   display: flex;

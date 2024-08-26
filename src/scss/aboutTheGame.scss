@@ -1,3 +1,11 @@
+.section.about-the-game-section {
+  background-image: url(../img/decorativeWave/gray_wave_about_the_game_bottom_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  @include media(desktop) {
+    background-image: url(../img/decorativeWave/gray_wave_about_the_game_bottom_desktop.png);
+  }
+}
 .inner-wrapper {
   display: flex;
   flex-direction: column;
@@ -28,16 +36,5 @@
     @include font(24, 36);
     width: 636px;
     padding: 0;
-  }
-}
-.about-the-game-wave {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: -71px;
-
-  @include media(desktop) {
-    width: calc(100% - 2px);
-    top: -156px;
   }
 }

@@ -1,22 +1,7 @@
-.how-to-play-gray-wave {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: -46px;
-
+.section.how-to-play-section {
+  background-image: url(../img/decorativeWave/gray_wave_how_to_play_top_mobile.png);
+  background-repeat: no-repeat;
   @include media(desktop) {
-    width: calc(100% - 2px);
-    top: -81px;
-  }
-}
-.how-to-play-orange-wave {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -78px;
-
-  @include media(desktop) {
-    width: calc(100% - 2px);
-    bottom: -191px;
+    background-image: url(../img/decorativeWave/gray_wave_how_to_play_top_desktop.png);
   }
 }
