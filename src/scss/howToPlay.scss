@@ -1,3 +1,15 @@
+.section.how-to-play-section {
+  background-image: image-set(
+    url(../img/decorativeWave/gray_wave_how_to_play_top_mobile.webp),
+    url(../img/decorativeWave/gray_wave_how_to_play_top_mobile.png)
+  );
+  @include media(desktop) {
+    background-image: image-set(
+      url(../img/decorativeWave/gray_wave_how_to_play_top_desktop.webp),
+      url(../img/decorativeWave/gray_wave_how_to_play_top_desktop.png)
+    );
+  }
+}
 .howToPlay-list {
   counter-reset: item;
 

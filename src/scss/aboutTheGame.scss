@@ -1,0 +1,45 @@
+.section.about-the-game-section {
+  background-image: image-set(
+    url(../img/decorativeWave/gray_wave_about_the_game_bottom_mobile.webp),
+    url(../img/decorativeWave/gray_wave_about_the_game_bottom_mobile.png)
+  );
+  background-position: center bottom;
+  @include media(desktop) {
+    background-image: image-set(
+      url(../img/decorativeWave/gray_wave_about_the_game_bottom_desktop.webp),
+      url(../img/decorativeWave/gray_wave_about_the_game_bottom_desktop.png)
+    );
+  }
+}
+.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 115px;
+    padding: 0 110px 0 149px;
+  }
+}
+.about-the-game-img {
+  width: 140px;
+  height: 288px;
+  margin: 0 auto;
+
+  transform: rotate(-12deg);
+  @include media(desktop) {
+    width: 236px;
+    height: 484px;
+    margin-bottom: 0;
+    transform: translateY(-90px) rotate(-12deg);
+  }
+}
+.about-the-game-text {
+  @include font(14, 20);
+  padding: 0 8px;
+  @include media(desktop) {
+    @include font(24, 36);
+    width: 636px;
+    padding: 0;
+  }
+}

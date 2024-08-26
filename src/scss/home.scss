@@ -1,18 +1,11 @@
 @import url('./homeAnimation.scss');
 
-.home-section {
+section.home-section {
   padding-top: 107px;
-  padding-bottom: 44px;
   @include media(desktop) {
     padding-top: 252px;
-    padding-bottom: 80px;
   }
 }
-
-.home-container {
-  position: relative;
-}
-
 .main-title {
   position: relative;
   z-index: 1;
@@ -127,16 +120,6 @@
   }
 }
 
-.home-wave {
-  position: absolute;
-  width: 317px;
-  left: 0;
-  bottom: -66px;
-  @include media(desktop) {
-    width: 1438px;
-    bottom: -185px;
-  }
-}
 .gray-puzzle {
   position: absolute;
   fill: rgba(248, 248, 248, 0.5);

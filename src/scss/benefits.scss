@@ -1,4 +1,4 @@
-.benefits {
+.benefits-section {
   padding-top: 44px;
   padding-bottom: 44px;
 
@@ -88,5 +88,18 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.section.benefits-section {
+  background-image: image-set(
+    url(../img/decorativeWave/gray_wave_benefits_top_mobile.webp),
+    url(../img/decorativeWave/gray_wave_benefits_top_mobile.png)
+  );
+  @include media(desktop) {
+    background-image: image-set(
+      url(../img/decorativeWave/gray_wave_benefits_top_desktop.webp),
+      url(../img/decorativeWave/gray_wave_benefits_top_desktop.png)
+    );
   }
 }
