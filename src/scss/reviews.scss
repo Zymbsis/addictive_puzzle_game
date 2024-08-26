@@ -158,7 +158,11 @@
     fill: #f1b0cc;
   }
 }
-
+.prev-review {
+  svg {
+    transform: rotate(-180deg);
+  }
+}
 .left-rotate {
   transform: rotate(-10deg);
 }
