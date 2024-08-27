@@ -1,27 +1,20 @@
-const faqAnswerButtons = document.querySelectorAll('.button-triangle');
-
-faqAnswerButtons.forEach(button =>
-  button.addEventListener('click', showAnswerHandler)
+const faqElements = document.querySelectorAll('.faq-item');
+faqElements.forEach(element =>
+  element.addEventListener('click', showAnswerHandler)
 );
 
 function showAnswerHandler(e) {
-  const currentButton = e.target;
-  const currentAnswer = currentButton.parentElement.lastElementChild;
-  const currentQuestionContainer = currentButton.parentElement;
-  const isAnswerShown = currentButton.classList.contains('rotate');
+  const currentElement = e.currentTarget;
+  const visibleElement = [...faqElements].find(element =>
+    element.classList.contains('show-answer')
+  );
 
-  faqAnswerButtons.forEach(button => {
-    if (button !== currentButton) {
-      button.classList.remove('rotate');
-      button.parentElement.lastElementChild.classList.remove(
-        'faq-answer',
-        'show-answer'
-      );
-      button.parentElement.classList.remove('faq-answer');
-    }
-  });
-
-  currentQuestionContainer.classList.toggle('faq-answer', !isAnswerShown);
-  currentButton.classList.toggle('rotate', !isAnswerShown);
-  currentAnswer.classList.toggle('show-answer', !isAnswerShown);
+  if (!visibleElement) {
+    currentElement.classList.add('show-answer');
+  } else if (visibleElement === currentElement) {
+    visibleElement.classList.remove('show-answer');
+  } else {
+    currentElement.classList.add('show-answer');
+    visibleElement.classList.remove('show-answer');
+  }
 }
