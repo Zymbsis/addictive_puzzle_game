@@ -30,6 +30,8 @@
     font-size: 24px;
     height: 96px;
     gap: 8px;
+    box-shadow: 30px 55px 38px 0px rgba(0, 0, 0, 0.05),
+      3px 6px 15px 0px rgba(0, 0, 0, 0.1);
 
     @include media(desktop) {
       padding: 28px;
