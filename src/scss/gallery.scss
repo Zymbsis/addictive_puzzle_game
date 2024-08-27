@@ -8,7 +8,6 @@
       url(../img/decorativeWave/orange_wave_gallery_bottom_mobile.webp),
       url(../img/decorativeWave/orange_wave_gallery_bottom_mobile.png)
     );
-
   background-position: center top, center bottom -1px;
   @include media(desktop) {
     background-image: image-set(

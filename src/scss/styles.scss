@@ -19,13 +19,34 @@
   font-weight: 400;
   font-style: normal;
   color: $_text_color;
-  background-color: $_viewport_bg_color;
-
+  background-image: linear-gradient(
+    153deg,
+    #cedef2 2.29%,
+    #faebc7 44.91%,
+    #feb4a9 86.69%
+  );
+  overflow-x: hidden;
+  overflow-y: auto;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+:root::-webkit-scrollbar {
+  width: 8px;
+}
+
+:root::-webkit-scrollbar-thumb {
+  background-color: $_navigation_color;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+:root::-webkit-scrollbar-track {
+  background-color: none;
 }
 
 .section {
@@ -34,11 +55,9 @@
   padding: 44px 0;
   background-repeat: no-repeat;
   background-color: $_primary_bg_color;
-  border-left: 2px solid $_footer_bg_color;
-  border-right: 2px solid $_footer_bg_color;
   @include media(desktop) {
-    padding: 80px 0;
     width: $desktop;
+    padding: 80px 0;
   }
 }
 
@@ -51,12 +70,12 @@
 
 .container {
   width: 100%;
-  padding: 0 12px;
+  padding: 0 16px;
   position: relative;
 
   @include media(desktop) {
     width: $desktop;
-    padding: 0px 68px;
+    padding: 0px 72px;
   }
 }
 .docContainer {
