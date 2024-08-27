@@ -86,15 +86,15 @@
   transform: rotate(-25deg);
   fill: #f8f8f8;
   opacity: 0.5;
-  bottom: 940px;
+  bottom: 985px;
   left: -25px;
 
   @include media(desktop) {
     width: 331px;
     height: 302px;
     transform: rotate(23deg);
-    bottom: 963px;
-    left: -10px;
+    bottom: 1043px;
+    left: -35px;
   }
 }
 
@@ -102,17 +102,17 @@
   position: absolute;
   width: 90px;
   height: 84px;
-  transform: rotate(-115deg);
+  transform: rotate(243deg);
   fill: #ebb0d3;
   opacity: 0.5;
-  bottom: 144px;
-  left: 230px;
+  bottom: 170px;
+  left: 233px;
 
   @include media(desktop) {
     width: 331px;
     height: 302px;
-    transform: rotate(-130deg);
-    left: 1040px;
-    bottom: 66px;
+    transform: rotate(-117deg);
+    left: 1045px;
+    bottom: 99px;
   }
 }
