@@ -1,57 +1,88 @@
-.privacyPolicy {
-  section {
-    h3 {
+.privacy-policy > section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 28px;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.privacy-policy > section {
+  h3,
+  p {
+    @include font(14, 20);
+    @include media(desktop) {
+      @include font(24, 36);
+    }
+  }
+  h3 {
+    font-weight: 700;
+    margin-bottom: 16px;
+    @include media(desktop) {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    margin-bottom: 12px;
+    @include media(desktop) {
       margin-bottom: 16px;
-      font-weight: 700;
-      line-height: 1.4;
-      font-size: 14px;
-
-      @include media(desktop) {
-        margin-bottom: 20px;
-        line-height: 1.5;
-        font-size: 24px;
-      }
     }
-
-    p {
-      font-size: 14px;
-      line-height: 1.42;
-      width: 272px;
-
-      &:not(:last-child) {
-        margin-bottom: 12px;
-
-        @include media(desktop) {
-          margin-bottom: 16px;
-        }
-      }
-
-      @include media(desktop) {
-        font-size: 24px;
-        line-height: 1.5;
-        width: 95%;
-      }
-
-      span {
-        font-weight: 600;
-      }
-    }
-    &:last-child {
+    &:last-of-type {
       margin-bottom: 0;
     }
   }
-  .general {
-    margin-bottom: 25px;
-    p {
-      width: 264px;
-    }
-
-    @include media(desktop) {
-      margin-bottom: 28px;
-
-      p {
-        width: 95%;
-      }
-    }
+  span {
+    font-weight: 600;
   }
+}
+.privacy-policy svg {
+  position: absolute;
+}
+.privacy-policy .white-puzzle {
+  width: 132px;
+  height: 120px;
+  transform: rotate(-25deg);
+  fill: #f8f8f8;
+  opacity: 0.5;
+  bottom: 985px;
+  left: -25px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(23deg);
+    bottom: 1043px;
+    left: -35px;
+  }
+}
+.privacy-policy .lilac-puzzle {
+  width: 90px;
+  height: 84px;
+  transform: rotate(243deg);
+  fill: #ebb0d3;
+  opacity: 0.5;
+  bottom: 170px;
+  left: 233px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(-117deg);
+    left: 1045px;
+    bottom: 99px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

@@ -1,44 +1,105 @@
-.termsOfUse {
-  section {
-    margin-bottom: 24px;
-    h3 {
+.terms-of-use > section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 28px;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.terms-of-use > section {
+  h3,
+  p {
+    @include font(14, 20);
+    @include media(desktop) {
+      @include font(24, 36);
+    }
+  }
+  h3 {
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @include media(desktop) {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    margin-bottom: 12px;
+    @include media(desktop) {
       margin-bottom: 16px;
-      font-weight: 700;
-      line-height: 1.42;
-      font-size: 14px;
-
-      @include media(desktop) {
-        margin-bottom: 20px;
-        line-height: 1.5;
-        font-size: 24px;
-      }
     }
-
-    p {
-      font-size: 14px;
-      line-height: 1.42;
-      width: 272px;
-
-      &:not(:last-child) {
-        margin-bottom: 12px;
-
-        @include media(desktop) {
-          margin-bottom: 16px;
-        }
-      }
-
-      @include media(desktop) {
-        font-size: 24px;
-        line-height: 1.5;
-        width: 95%;
-      }
-
-      span {
-        font-weight: 600;
-      }
-    }
-    &:last-child {
+    &:last-of-type {
       margin-bottom: 0;
     }
+  }
+}
+.terms-of-use svg {
+  position: absolute;
+}
+.terms-of-use .white-puzzle {
+  width: 132px;
+  height: 120px;
+  transform: rotate(-25deg);
+  fill: #f8f8f8;
+  opacity: 0.5;
+  top: 572px;
+  left: -25px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(29deg);
+    top: 1140px;
+    left: 6px;
+  }
+}
+.terms-of-use .pink-puzzle {
+  width: 122px;
+  height: 134px;
+  fill: rgba(254, 169, 220, 0.5);
+  top: 1589px;
+  left: -50px;
+  transform: rotate(41deg);
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+.terms-of-use .light-blue-puzzle {
+  width: 132px;
+  height: 120px;
+  transform: rotate(31deg);
+  flex-shrink: 0;
+  fill: rgba(174, 202, 245, 0.5);
+  opacity: 0.5;
+  bottom: 206px;
+  left: 204px;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 302px;
+    transform: rotate(326deg);
+    left: 1010px;
+    bottom: 180px;
+    fill: rgba(235, 176, 211, 0.5);
+  }
+}
+.terms-of-use .lilac-puzzle {
+  width: 120px;
+  height: 116px;
+  transform: rotate(338deg);
+  fill: rgba(254, 169, 220, 0.5);
+  left: 213px;
+  top: 130px;
+
+  @include media(desktop) {
+    width: 293px;
+    height: 282px;
+    transform: rotate(254deg);
+    left: 1024px;
+    top: 100px;
+    fill: rgba(225, 132, 188, 0.5);
   }
 }
