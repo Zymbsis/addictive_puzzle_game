@@ -1,69 +1,44 @@
-.termsOfUse {
+.terms-of-use > section {
   position: relative;
-  overflow: hidden;
-  section {
-    h3 {
+  z-index: 1;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 28px;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.terms-of-use > section {
+  h3,
+  p {
+    @include font(14, 20);
+    @include media(desktop) {
+      @include font(24, 36);
+    }
+  }
+  h3 {
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @include media(desktop) {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    margin-bottom: 12px;
+    @include media(desktop) {
       margin-bottom: 16px;
-      font-weight: 700;
-      line-height: 1.42;
-      font-size: 14px;
-
-      @include media(desktop) {
-        margin-bottom: 20px;
-        line-height: 1.5;
-        font-size: 24px;
-      }
     }
-
-    p {
-      font-size: 14px;
-      line-height: 1.42;
-      width: 272px;
-      position: relative;
-      z-index: 1;
-
-      &:not(:last-child) {
-        margin-bottom: 12px;
-
-        @include media(desktop) {
-          margin-bottom: 16px;
-        }
-      }
-
-      @include media(desktop) {
-        font-size: 24px;
-        line-height: 1.5;
-        width: 95%;
-      }
-
-      span {
-        font-weight: 600;
-      }
-    }
-    &:last-child {
+    &:last-of-type {
       margin-bottom: 0;
     }
   }
 }
-
-.termsOfUse section {
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    margin-bottom: 28px;
-  }
-}
-
-.termsOfUse .last-section {
-  margin-bottom: 0;
-
-  @include media(desktop) {
-    margin-bottom: 0px;
-  }
-}
-
-.termsOfUse .white-puzzle {
+.terms-of-use svg {
   position: absolute;
+}
+.terms-of-use .white-puzzle {
   width: 132px;
   height: 120px;
   transform: rotate(-25deg);
@@ -80,8 +55,7 @@
     left: 6px;
   }
 }
-.termsOfUse .pink-puzzle {
-  position: absolute;
+.terms-of-use .pink-puzzle {
   width: 122px;
   height: 134px;
   fill: rgba(254, 169, 220, 0.5);
@@ -93,8 +67,7 @@
     display: none;
   }
 }
-.termsOfUse .light-blue-puzzle {
-  position: absolute;
+.terms-of-use .light-blue-puzzle {
   width: 132px;
   height: 120px;
   transform: rotate(31deg);
@@ -113,9 +86,7 @@
     fill: rgba(235, 176, 211, 0.5);
   }
 }
-
-.termsOfUse .lilac-puzzle {
-  position: absolute;
+.terms-of-use .lilac-puzzle {
   width: 120px;
   height: 116px;
   transform: rotate(338deg);

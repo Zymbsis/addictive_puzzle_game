@@ -60,9 +60,10 @@
   }
 }
 .docContainer {
-  padding: 0 20px;
+  padding: 0 24px;
+  overflow: hidden;
   @include media(desktop) {
-    padding: 0 178px;
+    padding: 0 182px;
   }
 }
 .sectionTitle {
