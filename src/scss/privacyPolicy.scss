@@ -47,6 +47,7 @@
       margin-bottom: 0;
     }
   }
+
   .general {
     margin-bottom: 25px;
     p {
@@ -60,6 +61,21 @@
         width: 95%;
       }
     }
+  }
+}
+.privacyPolicy section {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 28px;
+  }
+}
+
+.privacyPolicy .last-section {
+  margin-bottom: 0;
+
+  @include media(desktop) {
+    margin-bottom: 0px;
   }
 }
 
