@@ -1,5 +1,9 @@
 .section.faq-section {
   background-color: $_secondary_bg_color;
+  padding-bottom: 24px;
+  @include media(desktop) {
+    padding-bottom: 32px;
+  }
 }
 
 .faq-list {
@@ -7,9 +11,11 @@
   flex-direction: column;
   margin: 0 auto;
   gap: 12px;
+  height: 276px;
   @include media(desktop) {
     width: 865px;
     gap: 16px;
+    height: 472px;
   }
 }
 
