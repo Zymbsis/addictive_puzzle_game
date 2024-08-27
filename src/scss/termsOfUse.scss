@@ -2,7 +2,6 @@
   position: relative;
   overflow: hidden;
   section {
-    margin-bottom: 24px;
     h3 {
       margin-bottom: 16px;
       font-weight: 700;
@@ -47,6 +46,22 @@
   }
 }
 
+.termsOfUse section {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 28px;
+  }
+}
+
+.termsOfUse .last-section {
+  margin-bottom: 0;
+
+  @include media(desktop) {
+    margin-bottom: 0px;
+  }
+}
+
 .termsOfUse .white-puzzle {
   position: absolute;
   width: 132px;
@@ -67,11 +82,12 @@
 }
 .termsOfUse .pink-puzzle {
   position: absolute;
-  width: 119px;
-  height: 116px;
+  width: 122px;
+  height: 134px;
   fill: rgba(254, 169, 220, 0.5);
-  top: 1594px;
-  left: -30px;
+  top: 1589px;
+  left: -50px;
+  transform: rotate(41deg);
 
   @include media(desktop) {
     display: none;
@@ -85,16 +101,16 @@
   flex-shrink: 0;
   fill: rgba(174, 202, 245, 0.5);
   opacity: 0.5;
-  bottom: 230px;
+  bottom: 206px;
   left: 204px;
 
   @include media(desktop) {
     width: 331px;
     height: 302px;
-    transform: rotate(-129deg);
-    left: 964px;
-    bottom: 196px;
-    fill: #ebb0d3;
+    transform: rotate(326deg);
+    left: 1010px;
+    bottom: 180px;
+    fill: rgba(235, 176, 211, 0.5);
   }
 }
 
@@ -105,14 +121,14 @@
   transform: rotate(338deg);
   fill: rgba(254, 169, 220, 0.5);
   left: 213px;
-  top: 121px;
+  top: 130px;
 
   @include media(desktop) {
     width: 293px;
     height: 282px;
-    transform: rotate(0deg);
-    left: 1095px;
-    top: 63px;
-    fill: #fea9dc;
+    transform: rotate(254deg);
+    left: 1024px;
+    top: 100px;
+    fill: rgba(225, 132, 188, 0.5);
   }
 }
