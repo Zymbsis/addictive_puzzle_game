@@ -33,7 +33,7 @@
     color: $_navigation_color;
     font-size: 18px;
     font-weight: 700;
-    transition: all 300ms ease-in-out;
+    transition: $_transition;
   }
   li:hover a {
     color: $_hovered_link_color;

@@ -30,7 +30,7 @@ section.home-section {
   border: 2px solid #e94c6f;
   border-radius: 12px;
   background-color: $_white_color;
-  transition: all 300ms ease-in-out;
+  transition: $_transition;
 
   @include media(desktop) {
     width: 306px;

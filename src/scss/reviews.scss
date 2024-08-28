@@ -44,7 +44,7 @@
   border-radius: 14px;
   box-shadow: 26.667px 48.889px 33.778px 0px rgba(0, 0, 0, 0.05),
     2.667px 5.333px 13.333px 0px rgba(0, 0, 0, 0.1);
-  transition: all 400ms ease-in-out;
+  @include custom-transition(400);
   @include media(desktop) {
     padding: 24px;
   }
@@ -84,15 +84,15 @@
 }
 .swiper-slide.review-slide.swiper-slide-prev {
   transform: rotate(-10deg);
-  transition: all 400ms ease-in-out;
+  @include custom-transition(400);
 }
 .swiper-slide.review-slide.swiper-slide-active {
   transform: rotate(0deg);
-  transition: all 400ms ease-in-out;
+  @include custom-transition(400);
 }
 .swiper-slide.review-slide.swiper-slide-next {
   transform: rotate(10deg);
-  transition: all 400ms ease-in-out;
+  @include custom-transition(400);
 }
 
 .review-slide:nth-child(1) svg,
@@ -150,7 +150,7 @@
     width: 100%;
     height: 100%;
     fill: $_details_color;
-    transition: all 300ms ease-in-out;
+    @include custom-transition(400);
   }
 }
 

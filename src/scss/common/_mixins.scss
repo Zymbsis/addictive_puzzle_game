@@ -27,3 +27,6 @@ screen types:
   $result: math.div($_lnh, $_fsz);
   line-height: math.div(math.round($result * 100), 100);
 }
+@mixin custom-transition($duration) {
+  transition: all #{$duration}ms ease-in-out;
+}

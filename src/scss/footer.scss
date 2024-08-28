@@ -31,7 +31,7 @@
   }
   a {
     text-decoration-line: underline;
-    transition: color 300ms ease-in-out;
+    transition: $_transition;
     @include font(14, 20);
     @include media(desktop) {
       padding: 20px 0;

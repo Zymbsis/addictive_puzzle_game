@@ -22,9 +22,9 @@
 .faq-item {
   position: relative;
   padding-left: 20px;
-  transition: all 300ms ease-in-out;
   max-height: 28px;
   cursor: pointer;
+  transition: $_transition;
   @include media(desktop) {
     padding-left: 40px;
     max-height: 56px;
@@ -38,7 +38,7 @@
   width: 28px;
   height: 28px;
   background-color: transparent;
-  transition: all 300ms ease-in-out;
+  transition: $_transition;
   @include media(desktop) {
     width: 56px;
     height: 56px;
@@ -76,7 +76,7 @@
   color: $_faq_primary_color;
   transform: translateY(-28px);
   opacity: 0;
-  transition: all 300ms ease-in-out;
+  transition: $_transition;
   @include media(desktop) {
     opacity: 1;
     transform: translateY(-100%);
@@ -85,7 +85,7 @@
 
 .faq-item.show-answer {
   max-height: 76px;
-  transition: all 300ms ease-in-out;
+  transition: $_transition;
   @include media(desktop) {
     max-height: 118px;
   }
@@ -95,6 +95,6 @@
   .answer {
     opacity: 1;
     transform: translateY(0);
-    transition: all 300ms ease-in-out;
+    transition: $_transition;
   }
 }
