@@ -1,10 +1,6 @@
-.benefits-section {
-  padding-top: 44px;
-  padding-bottom: 44px;
-
+.container.benefits-container {
   @include media(desktop) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 0 182px;
   }
 }
 .benefits-list {
@@ -34,8 +30,8 @@
       3px 6px 15px 0px rgba(0, 0, 0, 0.1);
 
     @include media(desktop) {
-      padding: 28px;
-      width: calc((100% - 3 * 24px) / 4);
+      padding: 22px;
+      width: calc((100% - 3 * 20px) / 4);
       height: 192px;
       border-radius: 16px;
       font-size: 48px;
