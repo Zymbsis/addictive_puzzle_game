@@ -19,19 +19,7 @@ const swiper = new Swiper('.gallery-swiper', {
   },
   on: {
     slideChange: swiper => {
-      if (window.innerWidth >= 1440) {
-        if (swiper.activeIndex === 4) {
-          swiper.allowSlideNext = false;
-          document
-            .querySelector('.next-img-btn')
-            .classList.add('swiper-button-disabled');
-        } else {
-          swiper.allowSlideNext = true;
-          document
-            .querySelector('.next-img-btn')
-            .classList.remove('swiper-button-disabled');
-        }
-      }
+      navButtonToggleDisable(swiper);
       changeBullet(swiper);
     },
   },
@@ -41,22 +29,35 @@ const swiper = new Swiper('.gallery-swiper', {
   },
 });
 
+function navButtonToggleDisable(swiper) {
+  const navButtonClassList = document.querySelector('.next-img-btn').classList;
+
+  if (window.innerWidth >= 1440) {
+    if (swiper.activeIndex === 4) {
+      swiper.allowSlideNext = false;
+      navButtonClassList.add('swiper-button-disabled');
+    } else {
+      swiper.allowSlideNext = true;
+      navButtonClassList.remove('swiper-button-disabled');
+    }
+  }
+}
+
 function changeBullet(swiper) {
-  const paginationBulletClass = document.querySelector(
+  const bulletClassList = document.querySelector(
     '.gallery-pagination-bullet'
   ).classList;
-
   if (swiper.activeIndex === 0) {
-    paginationBulletClass.remove('last-slide-active', 'slide-active');
+    bulletClassList.remove('last-slide-active', 'slide-active');
   } else if (
     (window.innerWidth < 1440 &&
       swiper.activeIndex === swiper.slides.length - 1) ||
     (window.innerWidth >= 1440 && swiper.activeIndex === 4)
   ) {
-    paginationBulletClass.add('last-slide-active');
-    paginationBulletClass.remove('slide-active');
+    bulletClassList.add('last-slide-active');
+    bulletClassList.remove('slide-active');
   } else {
-    paginationBulletClass.add('slide-active');
-    paginationBulletClass.remove('next-slide-active');
+    bulletClassList.add('slide-active');
+    bulletClassList.remove('next-slide-active');
   }
 }

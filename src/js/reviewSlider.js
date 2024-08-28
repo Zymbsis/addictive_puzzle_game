@@ -31,6 +31,7 @@ const swiper = new Swiper('.review-swiper', {
     nextEl: '.next-review',
   },
 });
+
 function changeRotate(swiper) {
   swiper.slides[swiper.realIndex + 1]?.nextElementSibling?.classList.add(
     'right-rotate'
@@ -43,17 +44,18 @@ function changeRotate(swiper) {
     'left-rotate'
   );
 }
+
 function changeBullet(swiper) {
-  const paginationBulletClass = document.querySelector(
+  const bulletClassList = document.querySelector(
     '.review-pagination-bullet'
   ).classList;
   if (swiper.activeIndex === 0) {
-    paginationBulletClass.remove('last-slide-active', 'slide-active');
+    bulletClassList.remove('last-slide-active', 'slide-active');
   } else if (swiper.activeIndex === swiper.slides.length - 1) {
-    paginationBulletClass.add('last-slide-active');
-    paginationBulletClass.remove('slide-active');
+    bulletClassList.add('last-slide-active');
+    bulletClassList.remove('slide-active');
   } else {
-    paginationBulletClass.add('slide-active');
-    paginationBulletClass.remove('next-slide-active');
+    bulletClassList.add('slide-active');
+    bulletClassList.remove('next-slide-active');
   }
 }
