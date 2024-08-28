@@ -1,3 +1,15 @@
+.section.benefits-section {
+  background-image: image-set(
+    url(../img/decorativeWave/gray_wave_benefits_top_mobile.webp),
+    url(../img/decorativeWave/gray_wave_benefits_top_mobile.png)
+  );
+  @include media(desktop) {
+    background-image: image-set(
+      url(../img/decorativeWave/gray_wave_benefits_top_desktop.webp),
+      url(../img/decorativeWave/gray_wave_benefits_top_desktop.png)
+    );
+  }
+}
 .container.benefits-container {
   @include media(desktop) {
     padding: 0 182px;
@@ -28,6 +40,9 @@
     gap: 8px;
     box-shadow: 30px 55px 38px 0px rgba(0, 0, 0, 0.05),
       3px 6px 15px 0px rgba(0, 0, 0, 0.1);
+    &:first-of-type {
+      gap: 2px;
+    }
 
     @include media(desktop) {
       padding: 22px;
@@ -36,11 +51,14 @@
       border-radius: 16px;
       font-size: 48px;
       gap: 24px;
+      &:first-of-type {
+        gap: 16px;
+      }
     }
   }
 }
 
-.benefits-subtittle {
+.benefits-subtitle {
   font-size: 14px;
 
   @include media(desktop) {
@@ -89,18 +107,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-.section.benefits-section {
-  background-image: image-set(
-    url(../img/decorativeWave/gray_wave_benefits_top_mobile.webp),
-    url(../img/decorativeWave/gray_wave_benefits_top_mobile.png)
-  );
-  @include media(desktop) {
-    background-image: image-set(
-      url(../img/decorativeWave/gray_wave_benefits_top_desktop.webp),
-      url(../img/decorativeWave/gray_wave_benefits_top_desktop.png)
-    );
   }
 }
