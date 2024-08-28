@@ -62,7 +62,8 @@
 .swiper-slide.review-slide p {
   @include font(18, 22);
   @include media(desktop) {
-    @include font(20, 22);
+    font-size: 20px;
+    line-height: normal;
   }
 }
 .swiper-slide.review-slide svg {
